@@ -1,0 +1,19 @@
+{
+ "cfg": {
+  "kind": "flag",
+  "trials": 20,
+  "D": 3.92,
+  "nipLen": 0.35,
+  "engine": "newton",
+  "note": "下降当て(torch最適と同弾道)。Newton XPBDは静止接触の静摩擦を過小評価するため掛かり率は~0%に出る(torch=37%の方が物理的)。"
+ },
+ "best": {
+  "belt": {
+   "a": 8.25,
+   "b": 67.0,
+   "spin": 0.0,
+   "p": 0.0,
+   "meanMiss": 0.07
+  }
+ }
+}

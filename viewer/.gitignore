@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.wrangler/
+*.local
+verify-report.json
+
+# 再生成可能な RAG シム動画は無視(ソース scripts/*・src/sim/* から再生成可)。
+# 最適化パラメータ json は小さく描画側が読むので追跡する。
+out/rag/mech-*.mp4

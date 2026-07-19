@@ -1,0 +1,390 @@
+/* ==========================================================================
+   デザイントークン — Apple 流 (.claude/skills/apple-design)
+   マテリアル(半透明レイヤ) / 光学的タイポグラフィ / スプリング的モーション。
+   ========================================================================== */
+:root {
+  /* --- タイポグラフィ ---
+     まずプラットフォームのシステムフォント。光学サイズ・トラッキング・字面が
+     すでに調整済みなので、理由がない限り上書きしない。CJK は Noto Sans JP。 */
+  --font-ui:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, 'Hiragino Sans', 'Noto Sans JP',
+    sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, 'Noto Sans JP', sans-serif;
+  --font-digit:
+    ui-rounded, -apple-system, 'SF Pro Rounded', system-ui, 'Helvetica Neue', sans-serif;
+
+  /* トラッキングはサイズ固有。大きい字ほど詰める / 小さい字はわずかに開く。 */
+  --track-display: -0.025em;
+  --track-title: -0.014em;
+  --track-body: 0em;
+  --track-caption: 0.012em;
+
+  /* --- マテリアル (translucency = 階層) ---
+     厚いものほど強いぼかしと深い影。薄いマテリアルの上に薄いマテリアルは重ねない。 */
+  --mat-thick-bg: rgba(20, 22, 28, 0.72);
+  --mat-regular-bg: rgba(24, 26, 33, 0.6);
+  --mat-thin-bg: rgba(28, 30, 38, 0.44);
+  --mat-blur-thick: saturate(180%) blur(30px);
+  --mat-blur-regular: saturate(180%) blur(20px);
+  --mat-blur-thin: saturate(160%) blur(12px);
+
+  /* 後方互換 (既存コンポーネントが参照しているトークン) */
+  --panel-bg: var(--mat-thick-bg);
+  --panel-bg-soft: var(--mat-thin-bg);
+  --panel-border: rgba(255, 255, 255, 0.1);
+  /* マテリアルの上端で光を拾うハイライト */
+  --panel-edge: rgba(255, 255, 255, 0.16);
+  --panel-radius: 20px;
+  --panel-blur: var(--mat-blur-thick);
+  --panel-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.5), 0 10px 40px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --panel-shadow-sm: 0 0 0 0.5px rgba(0, 0, 0, 0.45), 0 4px 16px rgba(0, 0, 0, 0.32);
+
+  /* --- テキスト (vibrancy: 半透明の上ではフラットなグレーではなく高コントラスト) --- */
+  --text-hi: rgba(255, 255, 255, 0.98);
+  --text-mid: rgba(235, 240, 248, 0.72);
+  --text-dim: rgba(225, 232, 245, 0.44);
+
+  /* --- チーム / 状態カラー --- */
+  --red: #ff453a;
+  --red-hi: #ff6961;
+  --blue: #0a84ff;
+  --blue-hi: #4aa8ff;
+  --gold: #ffd60a;
+  --ok: #30d158;
+  --warn: #ffd60a;
+  --bad: #ff453a;
+
+  /* --- コントロール --- */
+  --ctl-bg: rgba(255, 255, 255, 0.1);
+  --ctl-bg-hover: rgba(255, 255, 255, 0.16);
+  --ctl-border: rgba(255, 255, 255, 0.12);
+  --ctl-radius: 12px;
+  --pill: 999px;
+  --accent: #0a84ff;
+  --accent-hover: #339dff;
+
+  /* --- モーション ---
+     プレススケール等はテンポの速い ease-out。ジェスチャ系は JS スプリング (ui/spring.ts)。 */
+  --dur-press: 100ms;
+  --dur-fast: 180ms;
+  --dur: 280ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-standard: cubic-bezier(0.32, 0.72, 0, 1); /* Apple のシート曲線 */
+  /* 臨界減衰に近いスプリング (damping 1.0 相当) */
+  --ease-spring: linear(
+    0, 0.0033, 0.0263 2.6%, 0.1093 5.7%, 0.4144 12.3%, 0.5601, 0.6892, 0.7995 21.4%, 0.8886,
+    0.9451 27.3%, 0.9772 30.1%, 0.9938 33.4%, 1.0015 37.6%, 1.0033 45.5%, 1
+  );
+  /* フリック由来の動きにだけ使う軽いバウンス (damping ~0.8 相当) */
+  --ease-spring-bounce: linear(
+    0, 0.0089, 0.0705 5.2%, 0.2626 10.5%, 0.6216 18.2%, 0.7758, 0.8918, 0.9682 27.3%, 1.0203 30.8%,
+    1.0432 34.4%, 1.0453 38.4%, 1.0286 44.4%, 1.0007 53.3%, 0.9927 60.6%, 1.0006 76.9%, 1
+  );
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  font-family: var(--font-ui);
+  letter-spacing: var(--track-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+button,
+label,
+summary,
+span,
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+select {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+   マテリアル
+   ========================================================================== */
+.panel-glass {
+  background: var(--panel-bg);
+  border: 0.5px solid var(--panel-border);
+  border-top-color: var(--panel-edge); /* 上端で光を拾う = 実体のある板に見える */
+  border-radius: var(--panel-radius);
+  backdrop-filter: var(--panel-blur);
+  -webkit-backdrop-filter: var(--panel-blur);
+  box-shadow: var(--panel-shadow);
+}
+
+/* ==========================================================================
+   コントロール
+   フィードバックは pointer-down の瞬間に出す。離してからでは死んで感じる。
+   ========================================================================== */
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--ctl-bg);
+  border: 0.5px solid transparent;
+  border-radius: var(--ctl-radius);
+  color: var(--text-hi);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 590;
+  letter-spacing: var(--track-body);
+  padding: 7px 13px;
+  cursor: pointer;
+  line-height: 1.2;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+.ui-btn.icon-only {
+  min-width: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ui-btn:hover {
+  background: var(--ctl-bg-hover);
+}
+.ui-btn:active {
+  transform: scale(0.94);
+  transition-duration: var(--dur-press);
+}
+.ui-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+  transform: none;
+}
+.ui-btn:disabled:hover {
+  background: var(--ctl-bg);
+}
+.ui-btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+.ui-btn.primary:hover {
+  background: var(--accent-hover);
+}
+
+.ui-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+}
+.ui-icon > svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+.ui-select {
+  appearance: none;
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='none'><path d='M1 1l4 4 4-4' stroke='rgba(255,255,255,0.5)' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+      no-repeat right 9px center / 9px 6px,
+    var(--ctl-bg);
+  color: var(--text-hi);
+  border: 0.5px solid var(--ctl-border);
+  border-radius: var(--ctl-radius);
+  padding: 7px 26px 7px 10px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+.ui-select:hover {
+  background-color: var(--ctl-bg-hover);
+}
+.ui-select option {
+  background: #1c1e26;
+  color: #fff;
+}
+
+.ui-num {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-hi);
+  border: 0.5px solid var(--ctl-border);
+  border-radius: 8px;
+  padding: 5px 7px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  width: 66px;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+.ui-num:focus {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* セグメンテッドコントロール (iOS): 選択中はカプセル状のつまみが滑る */
+.ui-seg {
+  position: relative;
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0.5px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--ctl-radius);
+  padding: 2px;
+  isolation: isolate;
+}
+.ui-seg button {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: var(--text-mid);
+  font-family: var(--font-ui);
+  font-size: 12.5px;
+  font-weight: 590;
+  padding: 5px 11px;
+  cursor: pointer;
+  line-height: 1.2;
+  transition:
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+.ui-seg button:hover:not(.active):not(:disabled) {
+  color: var(--text-hi);
+}
+.ui-seg button:active:not(:disabled) {
+  transform: scale(0.94);
+}
+.ui-seg button.active {
+  color: #fff;
+}
+.ui-seg button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+/* つまみ本体。位置はスプリングで JS から更新する (Dock 参照) */
+.ui-seg .seg-thumb {
+  position: absolute;
+  z-index: 0;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+.ui-seg[data-empty='true'] .seg-thumb {
+  opacity: 0;
+}
+
+/* トグルスイッチ (iOS) */
+.ui-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 26px;
+  flex: none;
+}
+.ui-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.ui-switch .knob {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: var(--pill);
+  transition: background var(--dur-fast) var(--ease-out);
+  cursor: pointer;
+}
+.ui-switch .knob::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  /* 摘みは軽く跳ねて着地する — 物理的なスイッチの手触り */
+  transition: transform var(--dur) var(--ease-spring-bounce);
+}
+.ui-switch input:checked + .knob {
+  background: var(--ok);
+}
+.ui-switch input:checked + .knob::before {
+  transform: translateX(18px);
+}
+
+/* ==========================================================================
+   アクセシビリティ — reduced motion は「動きなし」ではなく穏やかな等価物
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 120ms !important;
+    transition-timing-function: ease !important;
+    scroll-behavior: auto !important;
+  }
+  .ui-btn:active,
+  .ui-seg button:active {
+    transform: none;
+  }
+}
+
+/* 半透明を弱める設定: マテリアルを不透明寄りにして blur を落とす */
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --mat-thick-bg: rgb(24, 26, 32);
+    --mat-regular-bg: rgb(26, 28, 35);
+    --mat-thin-bg: rgba(26, 28, 35, 0.92);
+    --mat-blur-thick: none;
+    --mat-blur-regular: none;
+    --mat-blur-thin: none;
+    --panel-blur: none;
+  }
+}
+
+/* 高コントラスト: 縁を立てて面をほぼ不透明に */
+@media (prefers-contrast: more) {
+  :root {
+    --mat-thick-bg: rgb(16, 18, 23);
+    --panel-border: rgba(255, 255, 255, 0.55);
+    --panel-edge: rgba(255, 255, 255, 0.6);
+    --ctl-border: rgba(255, 255, 255, 0.5);
+    --text-mid: rgba(255, 255, 255, 0.92);
+    --text-dim: rgba(255, 255, 255, 0.75);
+  }
+}
