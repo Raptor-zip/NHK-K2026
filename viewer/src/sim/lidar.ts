@@ -1,5 +1,6 @@
 import type { Rng } from './rng';
 import { FIELD, RED_SIDE, DIMS, mirror, type Vec2, REFLECTORS_RED } from '../config/field';
+import { lidarMount, sectionRects, type LidarMount } from '../config/robot-shape';
 import { fenceSegments, type Seg } from './collision';
 
 /**
@@ -13,10 +14,19 @@ import { fenceSegments, type Seg } from './collision';
  *   - スキャン歪み: 1回転25ms中の自己移動により、レイごとに原点ポーズが異なる
  *     (実機ドライバと同じく「全レイ同一ポーズ」を仮定して復元するとズレて見える)
  *
- * 搭載高さ = スキャン面 0.12 m (フェンスH150/教壇H200を観測するため)。
+ * 取付は **URDF の fixed 関節**が唯一の情報源 (`config/robot-shape.ts`)。
+ * 下段は車体の前後端 (±0.454 m) に 1 台ずつ、走査面 0.112 m。
+ * ⚠ **車体中心から飛ばしてはいけない。** 前後の胴は 908mm 離れているので、
+ *   実機なら片方からしか見えない物 (机の脚・椅子の脚) が中心 1 点だと
+ *   両方から見えることになり、ICP が実機より当たってしまう。
  * この高さで見えるもの: フェンス・教壇・バケツ(H255)・台・旗土台・机/椅子の「脚」。
  */
-export const LIDAR_SCAN_HEIGHT = 0.12;
+export const LIDAR_LOW_FRONT = lidarMount('lidar_low_front');
+export const LIDAR_LOW_REAR = lidarMount('lidar_low_rear');
+export const LIDAR_HIGH = lidarMount('lidar_high');
+
+/** 下段の走査面 [m]。CAD `tr_params.LIDAR_LOW_Z`（椅子の座面 150 より下） */
+export const LIDAR_SCAN_HEIGHT = LIDAR_LOW_FRONT.y;
 
 export const LIDAR = {
   model: 'UST-20LX',
@@ -45,8 +55,8 @@ export interface LidarScan {
    */
   ranges: Float32Array;
   rays: number;
-  /** センサーの車体取付方位 (0=前向き, π=後ろ向き)。下段は前後2台構成 */
-  mountYaw: number;
+  /** どのセンサーが出したスキャンか (取付位置・方位・走査面の高さ) */
+  mount: LidarMount;
   /** スキャン終了時点の真ポーズ (シム内部でのみ既知。推定器は使用不可) */
   truePose: Pose2;
   /** スキャン中の移動歪みの元になった速度 (デバッグ用) */
@@ -63,7 +73,10 @@ export function angleOf(i: number): number {
 /**
  * 実機ドライバと同じ「スキャン終了ポーズに全レイが属す」仮定でセンサー座標へ復元。
  * 移動中はこの仮定が破れて歪む — それがそのまま点群に現れる (T14)。
- * 戻り値: ロボット座標系 (前方+z, 右+x) の点列 [x0,z0,...] と有効数 n
+ * 戻り値: **ロボット座標系** (前方+z, 左+x) の点列 [x0,z0,...] と有効数 n
+ *
+ * ⚠ 取付位置ぶんの平行移動を必ず足す。前後の下段は ±0.454m 離れているので、
+ *   これを落とすと点群が 0.9m ずれて重なり、ICP が別の場所に収束する。
  */
 export function scanToLocalPoints(scan: LidarScan): { pts: Float32Array; n: number } {
   const pts = new Float32Array(scan.rays * 2);
@@ -71,9 +84,9 @@ export function scanToLocalPoints(scan: LidarScan): { pts: Float32Array; n: numb
   for (let i = 0; i < scan.rays; i++) {
     const r = scan.ranges[i]!;
     if (r >= LIDAR.range - 1e-3 || r <= LIDAR.minRange) continue;
-    const a = scan.mountYaw + angleOf(i);
-    pts[n * 2] = Math.sin(a) * r;
-    pts[n * 2 + 1] = Math.cos(a) * r;
+    const a = scan.mount.yaw + angleOf(i);
+    pts[n * 2] = scan.mount.x + Math.sin(a) * r;
+    pts[n * 2 + 1] = scan.mount.z + Math.cos(a) * r;
     n++;
   }
   return { pts, n };
@@ -173,7 +186,7 @@ export function getMapSegs(): Seg[] {
  * 実設計知見 (strategy.md §4.5.5)。0.50mでは逆にフェンス・教壇が消え、
  * 見えるのは 台(H600)・椅子・旗ポール・机脚の一部と「相手車体」だけ → クラスタリングに最適。
  */
-export const LIDAR_UPPER_HEIGHT = 0.5;
+export const LIDAR_UPPER_HEIGHT = LIDAR_HIGH.y;
 
 function buildUpperSegs(): Seg[] {
   const segs: Seg[] = [];
@@ -221,22 +234,34 @@ function raySeg(ox: number, oz: number, dx: number, dz: number, s: Seg): number 
   return null;
 }
 
-function opponentSegs(opponent: Pose2 | null): Seg[] {
+/**
+ * 相手機の断面。**CAD の当たり判定をスキャン面で切る** (`config/robot-shape.ts`)。
+ *
+ * ⚠ 以前は 0.76m 角の正方形 1 つで近似していた。実機はそうなっていない:
+ *   * 下段 0.112m … 底板 0.842×0.722 の外に LiDAR の胴が前後へ出て**全長 0.97m**
+ *   * 上段 0.500m … 見えるのは側面トラスの**厚さ 24mm の板 2 枚**と砲塔台だけで、
+ *     中は素通し。正方形で塞いでいたので、相手越しの物が全部消えていた。
+ *   断面が違えば、相手クラスタの幅も向きの推定も違う値になる。
+ *
+ * 内側の面が余分に入るが、レイは最も近い交点を採るので結果は変わらない。
+ */
+function opponentSegs(opponent: Pose2 | null, scanY: number): Seg[] {
   const dyn: Seg[] = [];
   if (!opponent) return dyn;
-  const h = 0.38;
   const c = Math.cos(opponent.theta);
   const s = Math.sin(opponent.theta);
-  const corners = [
-    [-h, -h],
-    [h, -h],
-    [h, h],
-    [-h, h],
-  ].map(([px, pz]) => [opponent.x + px! * c + pz! * s, opponent.z - px! * s + pz! * c]);
-  for (let i = 0; i < 4; i++) {
-    const a = corners[i]!;
-    const b = corners[(i + 1) % 4]!;
-    dyn.push({ x1: a[0]!, z1: a[1]!, x2: b[0]!, z2: b[1]! });
+  for (const r of sectionRects(scanY)) {
+    const corners = [
+      [r.cx - r.hw, r.cz - r.hd],
+      [r.cx + r.hw, r.cz - r.hd],
+      [r.cx + r.hw, r.cz + r.hd],
+      [r.cx - r.hw, r.cz + r.hd],
+    ].map(([px, pz]) => [opponent.x + px! * c + pz! * s, opponent.z - px! * s + pz! * c]);
+    for (let i = 0; i < 4; i++) {
+      const a = corners[i]!;
+      const b = corners[(i + 1) % 4]!;
+      dyn.push({ x1: a[0]!, z1: a[1]!, x2: b[0]!, z2: b[1]! });
+    }
   }
   return dyn;
 }
@@ -267,19 +292,22 @@ export function castScan(
   rng: Rng,
   t: number,
   segsOverride?: Seg[],
-  mountYaw = 0,
+  mount: LidarMount = LIDAR_LOW_FRONT,
 ): LidarScan {
   const segs = segsOverride ?? getMapSegs();
-  const dyn = opponentSegs(opponent);
+  const dyn = opponentSegs(opponent, mount.y);
   const ranges = new Float32Array(LIDAR.rays);
   const scanT = 1 / LIDAR.scanHz;
   for (let i = 0; i < LIDAR.rays; i++) {
     const frac = i / (LIDAR.rays - 1);
     const tOff = (frac - 1) * scanT; // 過去に遡る
-    const ox = pose.x + vel.vx * tOff;
-    const oz = pose.z + vel.vz * tOff;
     const th = pose.theta + vel.omega * tOff;
-    const trueR = castOne(ox, oz, th + mountYaw + angleOf(i), segs, dyn);
+    // 走査原点は取付位置。車体が回れば胴も振り回される（レバーアーム）
+    const c = Math.cos(th);
+    const s = Math.sin(th);
+    const ox = pose.x + vel.vx * tOff + mount.x * c + mount.z * s;
+    const oz = pose.z + vel.vz * tOff - mount.x * s + mount.z * c;
+    const trueR = castOne(ox, oz, th + mount.yaw + angleOf(i), segs, dyn);
     if (trueR >= LIDAR.range) {
       ranges[i] = LIDAR.range;
       continue;
@@ -295,5 +323,5 @@ export function castScan(
     const g = (rng() + rng() + rng() - 1.5) / 0.6124; // 疑似ガウス (σ≈1)
     ranges[i] = Math.max(LIDAR.minRange, trueR + g * sigma);
   }
-  return { ranges, rays: LIDAR.rays, mountYaw, truePose: { ...pose }, vel: { ...vel }, t };
+  return { ranges, rays: LIDAR.rays, mount, truePose: { ...pose }, vel: { ...vel }, t };
 }

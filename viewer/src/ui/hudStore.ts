@@ -37,6 +37,8 @@ export interface UiPrefs {
   controlMode: ControlMode;
   showPad: boolean;
   faceCam: boolean;
+  /** 機体を CAD 実形状（URDF）で描く。false は簡略形状 */
+  cadRobot: boolean;
 }
 
 export const prefs = writable<UiPrefs>({
@@ -52,8 +54,9 @@ export const prefs = writable<UiPrefs>({
   redProbMul: 1,
   blueDriveMul: 1,
   redDriveMul: 1,
-  blueMuzzleY: 1.5,
-  redMuzzleY: 1.2,
+  // ⚠ CAD の NIP_Z=1000mm。赤は相手想定なので少し低い機体にしてある
+  blueMuzzleY: 1.0,
+  redMuzzleY: 0.9,
   blueSwerve: false,
   redSwerve: true,
   playerTeam: 'blue',
@@ -64,4 +67,5 @@ export const prefs = writable<UiPrefs>({
   controlMode: 'auto',
   showPad: true,
   faceCam: false,
+  cadRobot: true,
 });

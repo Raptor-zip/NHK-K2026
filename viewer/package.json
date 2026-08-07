@@ -5,12 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run urdf:sync && vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "verify": "tsx scripts/verify.ts",
     "sweep": "tsx scripts/sweep.ts",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=nhk-k2026-viewer --commit-dirty=true"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=nhk-k2026-viewer --commit-dirty=true",
+    "urdf:sync": "tsx scripts/sync-urdf.ts",
+    "urdf:shape": "tsx scripts/gen-robot-shape.ts",
+    "urdf:check": "tsx scripts/urdf-check.ts",
+    "lidar:check": "tsx scripts/lidar-check.ts"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "^0.19.3",

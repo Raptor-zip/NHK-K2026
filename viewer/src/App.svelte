@@ -151,6 +151,8 @@
       viewer.multiCamActive = p.controlMode === 'multicam';
       viewer.ragCamActive = p.controlMode === 'ragcam';
       viewer.faceCamActive = p.faceCam;
+      // 機体を CAD 実形状（URDF）で描くか。読み込み前は簡略形状のまま進む
+      if ('setUrdfSkin' in viewer) (viewer as SimViewer).setUrdfSkin(p.cadRobot);
       // 操縦モードは試合リセット無しで反映 (手動↔自動の遷移のみ内部で処理)
       viewer.match.setControlMode(p.controlMode);
       audio.setEnabled(p.sound && audioOn);

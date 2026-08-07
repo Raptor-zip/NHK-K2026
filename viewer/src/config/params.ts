@@ -1,4 +1,5 @@
 /** シミュレーションパラメータ (strategy.md §4 の設計値と対応させる) */
+import { ROBOT } from './field';
 
 export interface RagPhys {
   /** 質量 kg */
@@ -30,11 +31,33 @@ export interface SimParams {
     /** ルックアヘッド弧長 = clamp(0.28 + 速度×lookaheadK, 0.28, 0.85) */
     lookaheadK: number;
   };
-  wheel: { r: number; k: number }; // メカナム: 半径, (a+b)/2
+  /**
+   * メカナム: 車輪半径 [m] と (ホイールベース/2 + トレッド/2)/2 [m]。
+   * ⚠ **CAD が決めている数字**。`cad/src/tr_params.py` の WHEEL_DIA=100 と
+   *   `cad/urdf/tr.urdf` の車輪取付 xyz="±0.3 ±0.3 0.05"、実機制御
+   *   `cad/control/tr_control.py` の WHEEL_R / LX / LY と一致させること。
+   *   ここがずれていると、URDF の車輪が接地速度と合わない回り方をする
+   *   （φ127 のままだと 21% 遅く回り、走っているのに滑って見える）。
+   */
+  wheel: { r: number; k: number };
   turret: {
     muzzleY: number;
     yawRate: number; // rad/s
     settleYaw: number; // rad
+    /**
+     * 砲塔ヨーの可動域 [rad, ±]。⚠ **CAD が決めている数字**で、
+     * `cad/urdf/tr.urdf` の `turret_yaw` の lower/upper と一致させること
+     * （±0.523599 = ±30°）。ここを CAD より広くすると、シムだけが
+     * 回れる砲塔で試合をすることになる（実際 ±2.4rad = ±137° で
+     * 回っていて、実機では出せない −56° の指令が出ていた）。
+     */
+    yawLimit: number;
+    /**
+     * 仰角の可動域 [rad]。同じく `shooter_pitch` の lower/upper。
+     * ウォーム減速機の噛み合いで決まるので、シム側で広げても意味がない。
+     */
+    pitchMin: number;
+    pitchMax: number;
   };
   shooter: {
     aim: number; // 照準+整定 s
@@ -83,8 +106,18 @@ export const DEFAULT_PARAMS: SimParams = {
   drive: { vmax: 2.0, acc: 1.6 },
   swerveDrive: { vmax: 2.4, acc: 1.3 },
   follow: { crossP: 22, crossD: 2, safeAccF: 0.6, lookaheadK: 0.16 },
-  wheel: { r: 0.0635, k: 0.5 },
-  turret: { muzzleY: 1.5, yawRate: 3.5, settleYaw: 0.02 },
+  wheel: { r: 0.05, k: 0.3 }, // φ100 / LX=LY=0.30 (cad/control/tr_control.py)
+  turret: {
+    // ⚠ **CAD が決めている**: `tr_params.NIP_Z = 1000mm`
+    //   （台座プレート上面 842 + 旋回/仰角ユニットの占有半径 152 = 994 より上）。
+    //   1.5 は実機に無い高さで、そのぶん旗（3.0m）への必要初速を低く見ていた。
+    muzzleY: 1.0,
+    yawRate: 3.5,
+    settleYaw: 0.02,
+    yawLimit: 0.523599, // ±30° (cad/urdf/tr.urdf: turret_yaw)
+    pitchMin: 0.349066, // 20°   (cad/urdf/tr.urdf: shooter_pitch)
+    pitchMax: 1.22173, // 70°
+  },
   shooter: {
     aim: 1.5,
     feed: 0.9,
@@ -106,7 +139,11 @@ export const DEFAULT_PARAMS: SimParams = {
   rag: { m: 0.048, k: 0.012, lift: 0.55 },
   // スーパー雑巾 400×600mm 140g
   superRag: { m: 0.14, k: 0.032, lift: 0.35 },
-  bucketTopY: { blue: 2.0, red: 1.5 },
+  // ⚠ **CAD が建てた高さ**（ROBOT.bucket.topY = マスト上端 1172 + 受け板 t3 + バケツ 255）。
+  //   規定 3.2.3b の 1200..2100 内で上げ下げできる「作戦の値」だが、既定は
+  //   実機に合わせる。前は青 2.0 / 赤 1.5 で、CAD 実形状で描くと画面の
+  //   バケツ（1.429）と当たり判定が 570mm 食い違っていた。
+  bucketTopY: { blue: ROBOT.bucket.topY, red: ROBOT.bucket.topY },
   defense: { microMove: false },
   flagCapacity: 3,
   flagFallPerSec: 0.02,

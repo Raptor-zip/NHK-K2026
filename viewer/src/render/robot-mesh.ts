@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { homePos, waypoints, type TeamId } from '../config/field';
+import { homePos, ROBOT, waypoints, type TeamId } from '../config/field';
 import type { RobotState } from '../sim/types';
 import { mascotTexture, ragTexture } from './textures';
 
@@ -418,35 +418,43 @@ export class RobotVisual {
     chairG.add(head);
 
     // ===== マスト + 移動バケツ =====
+    // ⚠ **バケツは車体中心線の 70mm 後ろ**（CAD `BUCKET_X = -70`）。マストは
+    //   側面トラスの延長で |X| = 0.35 の 2 本、Z = -0.275。以前は片側の角
+    //   (0.24, -0.24) に 1 本だけ立てて斜めに担いでいて、CAD 実形状に
+    //   切り替えるとバケツが 340mm 横へ飛んでいた。
+    const bx = ROBOT.bucket.x;
+    const bz = ROBOT.bucket.z;
+    const mastZ = -0.275;
     const mastH = bucketTopY - 0.255;
-    const mastA = this.alu(0.02, mastH - 0.09, 0.02, 0.24, (mastH + 0.09) / 2, -0.24);
-    const mastB = this.alu(0.02, mastH - 0.4, 0.02, 0.28, (mastH + 0.4) / 2, -0.28);
-    const mastTop = this.alu(0.1, 0.02, 0.02, 0.26, mastH - 0.02, -0.26);
-    const mastBraceA = this.aluBetween([0.24, 0.4, -0.24], [0.28, bucketTopY - 0.28, -0.28], 0.014);
-    const mastBraceB = this.aluBetween([0.28, 0.4, -0.28], [0.24, bucketTopY - 0.28, -0.24], 0.014);
+    const mastA = this.alu(0.02, mastH - 0.09, 0.02, 0.35, (mastH + 0.09) / 2, mastZ);
+    const mastB = this.alu(0.02, mastH - 0.09, 0.02, -0.35, (mastH + 0.09) / 2, mastZ);
+    // 片持ちの受け梁（-X 側の柱から前へ出て、中心線でバケツを座らせる）
+    const mastTop = this.alu(0.344, 0.02, 0.435, 0, mastH - 0.01, (mastZ + 0.15) / 2);
+    const mastBraceA = this.aluBetween([0.35, 0.4, mastZ], [0.35, bucketTopY - 0.28, mastZ - 0.04], 0.014);
+    const mastBraceB = this.aluBetween([-0.35, 0.4, mastZ], [-0.35, bucketTopY - 0.28, mastZ - 0.04], 0.014);
     this.telescopingPosts.push(
       { mesh: mastA, baseY: 0.09, height: mastH - 0.09, stowedTopY: 1.12 },
-      { mesh: mastB, baseY: 0.4, height: mastH - 0.4, stowedTopY: 1.12 },
+      { mesh: mastB, baseY: 0.09, height: mastH - 0.09, stowedTopY: 1.12 },
     );
     this.mastTopParts.push(mastTop, mastBraceA, mastBraceB);
     const bucket = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.137, 0.108, 0.255, 24, 1, true),
+      new THREE.CylinderGeometry(ROBOT.bucket.r, 0.108, 0.255, 24, 1, true),
       new THREE.MeshPhongMaterial({ color: 0xdff1ff, transparent: true, opacity: 0.35, side: THREE.DoubleSide }),
     );
-    bucket.position.set(0.24, bucketTopY - 0.1275, -0.24);
+    bucket.position.set(bx, bucketTopY - 0.1275, bz);
     this.root.add(bucket);
-    const rim = new THREE.Mesh(new THREE.TorusGeometry(0.137, 0.008, 8, 24), lam(0xffffff));
+    const rim = new THREE.Mesh(new THREE.TorusGeometry(ROBOT.bucket.r, 0.008, 8, 24), lam(0xffffff));
     rim.rotation.x = Math.PI / 2;
-    rim.position.set(0.24, bucketTopY, -0.24);
+    rim.position.set(bx, bucketTopY, bz);
     this.root.add(rim);
     const line2L = new THREE.Mesh(new THREE.TorusGeometry(0.12, 0.004, 6, 24), lam(0xd7000f));
     line2L.rotation.x = Math.PI / 2;
-    line2L.position.set(0.24, bucketTopY - 0.12, -0.24);
+    line2L.position.set(bx, bucketTopY - 0.12, bz);
     this.root.add(line2L);
     // 取っ手 (下ろした状態・ルール5.3)
     const handle = new THREE.Mesh(new THREE.TorusGeometry(0.13, 0.006, 6, 20, Math.PI), lam(0xbfc7d1));
     handle.rotation.z = -Math.PI / 2;
-    handle.position.set(0.24 - 0.13, bucketTopY - 0.18, -0.24);
+    handle.position.set(bx - 0.13, bucketTopY - 0.18, bz);
     this.root.add(handle);
     this.bucketDeployG.add(bucket, rim, line2L, handle);
     const liftHandle = new THREE.Mesh(new THREE.TorusGeometry(0.18, 0.008, 6, 24, Math.PI), lam(0x8f98a8));

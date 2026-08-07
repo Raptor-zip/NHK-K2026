@@ -1,19 +1,15 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { MatchSim } from '../sim/match';
-import { FIELD, RED_SIDE, homePos, waypoints, type TeamId } from '../config/field';
-import {
-  LIDAR_SCAN_HEIGHT,
-  LIDAR_UPPER_HEIGHT,
-  localToWorld,
-  scanToLocalPoints,
-} from '../sim/lidar';
+import { FIELD, RED_SIDE, homePos, ROBOT, waypoints, type TeamId } from '../config/field';
+import { localToWorld, scanToLocalPoints } from '../sim/lidar';
 import { heightProfile } from '../sim/ballistics';
 import type { HungRag, Projectile } from '../sim/types';
 import { buildField, type FieldRefs } from './field-mesh';
 import { FaceCam } from './face-cam';
 import { planPath } from '../sim/pathfind';
 import { RobotVisual } from './robot-mesh';
+import { UrdfRobotVisual } from './urdf-robot';
 import { ragTexture } from './textures';
 import type { AudioEngine } from './audio';
 
@@ -87,9 +83,14 @@ export class WebGLInitError extends Error {
  * 試行ごとに新しい canvas を用意し、2回目は高性能GPU要求とMSAAを外した控えめな設定で試す。
  */
 function createRenderer(): THREE.WebGLRenderer {
+  // ⚠ `?capture=1` のときだけ描画バッファを残す。これが無いと
+  //   `canvas.toDataURL()` は**真っ白**を返す（WebGL は既定で提出後に捨てる）。
+  //   常時 true にすると毎フレーム余計なコピーが要るので、検証のときだけ。
+  const preserveDrawingBuffer =
+    typeof location !== 'undefined' && new URLSearchParams(location.search).has('capture');
   const attempts: THREE.WebGLRendererParameters[] = [
-    { antialias: true, powerPreference: 'high-performance' },
-    { antialias: false, powerPreference: 'default' },
+    { antialias: true, powerPreference: 'high-performance', preserveDrawingBuffer },
+    { antialias: false, powerPreference: 'default', preserveDrawingBuffer },
   ];
   let last: unknown = null;
   for (const opts of attempts) {
@@ -121,6 +122,14 @@ export class SimViewer {
   private field: FieldRefs;
   private blueVis: RobotVisual;
   private redVis: RobotVisual;
+  // CAD 実形状（URDF）の機体。読み込みが終わるまでは上の簡略形状を出しておく。
+  // ⚠ 両方を毎フレーム update する。切り替えは visible だけで、状態は常に同期
+  //   させておく（切り替えた瞬間に前の姿勢が残っているのを防ぐ）。
+  private blueUrdf: UrdfRobotVisual | null = null;
+  private redUrdf: UrdfRobotVisual | null = null;
+  private urdfSkin = true;
+  private urdfProgress = 0;
+  private urdfError: string | null = null;
   // バケツ高さは構築時にメッシュへ焼き込まれるため、変更を検知して描画を作り直す
   private builtBucketTopY = { blue: 0, red: 0 };
   private projMeshes = new Map<number, THREE.Mesh>();
@@ -311,6 +320,7 @@ export class SimViewer {
     this.redVis = new RobotVisual('red', match.par.bucketTopY.red, true);
     this.scene.add(this.blueVis.root, this.redVis.root);
     this.builtBucketTopY = { blue: match.par.bucketTopY.blue, red: match.par.bucketTopY.red };
+    void this.loadUrdfRobots();
     for (const team of ['blue', 'red'] as const) {
       for (let slot = 0; slot < 3; slot++) this.fieldPlayers.push(this.makeFieldPlayer(team, slot));
     }
@@ -475,7 +485,7 @@ export class SimViewer {
       this.camera,
     );
     // 狙える対象: フィールド造作物 + 相手ロボット + 着地済み雑巾。マーカー類は除外
-    const opponentVis = this.match.playerTeam === 'blue' ? this.redVis.root : this.blueVis.root;
+    const opponentVis = this.visFor(this.match.playerTeam === 'blue' ? 'red' : 'blue').root;
     const hits = this.raycaster.intersectObjects(
       [this.field.group, opponentVis, this.hungGroup],
       true,
@@ -974,6 +984,59 @@ export class SimViewer {
     }
   }
 
+  /**
+   * CAD 実形状（`cad/urdf/tr.urdf`）を読み込む。21MB あるので**非同期**で、
+   * 読めるまでは簡略形状のまま試合を進める。
+   *
+   * ⚠ 失敗しても試合は止めない。URDF は見た目であって、勝敗も物理も
+   *   `sim/match.ts` が持っている。落ちるのは「見た目が古いまま」だけ。
+   */
+  private async loadUrdfRobots(): Promise<void> {
+    try {
+      const blue = new UrdfRobotVisual({ team: 'blue' });
+      const red = new UrdfRobotVisual({ team: 'red' });
+      // 進捗は 2 機ぶんの平均。メッシュはブラウザのキャッシュが効くので
+      // 2 機目はほぼ待たない（同じ STL を 2 回落とさない）
+      const frac = [0, 0];
+      const report = (i: number) => (f: number) => {
+        frac[i] = f;
+        this.urdfProgress = (frac[0]! + frac[1]!) / 2;
+      };
+      await blue.load(report(0));
+      await red.load(report(1));
+      this.blueUrdf = blue;
+      this.redUrdf = red;
+      this.scene.add(blue.root, red.root);
+      this.urdfProgress = 1;
+    } catch (e) {
+      this.urdfError = e instanceof Error ? e.message : String(e);
+      this.urdfSkin = false;
+      console.error('[urdf] 読み込みに失敗したので簡略形状で続ける:', e);
+    }
+  }
+
+  /** CAD 実形状と簡略形状の切り替え。読み込み前は簡略形状のまま */
+  setUrdfSkin(on: boolean): void {
+    this.urdfSkin = on;
+  }
+
+  urdfStatus(): { ready: boolean; progress: number; error: string | null; skin: boolean; triangles: number } {
+    return {
+      ready: !!this.blueUrdf?.loaded && !!this.redUrdf?.loaded,
+      progress: this.urdfProgress,
+      error: this.urdfError,
+      skin: this.urdfSkin,
+      triangles: (this.blueUrdf?.triangles ?? 0) + (this.redUrdf?.triangles ?? 0),
+    };
+  }
+
+  /** いま画面に出ているほうの機体（推定ポーズ表示・レイキャストの対象） */
+  private visFor(team: TeamId): { root: THREE.Object3D } {
+    const urdf = team === 'blue' ? this.blueUrdf : this.redUrdf;
+    if (this.urdfSkin && urdf?.loaded) return urdf;
+    return team === 'blue' ? this.blueVis : this.redVis;
+  }
+
   /** ロボットの描画を現在の bucketTopY で作り直す (バケツ高さ変更の反映用) */
   private rebuildRobotVisual(team: TeamId): void {
     const old = team === 'blue' ? this.blueVis : this.redVis;
@@ -1266,11 +1329,20 @@ export class SimViewer {
     }
     this.blueVis.update(m.blue, dt, m.t);
     this.redVis.update(m.red, dt, m.t);
+    // CAD 実形状。⚠ 出していないときも update する（切り替えた瞬間に
+    // 前の姿勢が残っていると、砲塔だけ古い角度で出てくる）
+    this.blueUrdf?.update(m.blue, dt, m.t);
+    this.redUrdf?.update(m.red, dt, m.t);
+    const cad = this.urdfSkin && !!this.blueUrdf?.loaded && !!this.redUrdf?.loaded;
+    this.blueVis.root.visible = !cad;
+    this.redVis.root.visible = !cad;
+    if (this.blueUrdf) this.blueUrdf.root.visible = cad;
+    if (this.redUrdf) this.redUrdf.root.visible = cad;
 
     // Q24: 操作側ロボットは「推定ポーズ」で描画し、真値は半透明ワイヤ枠で示す。
     // リトライ搬送中はセンサー凍結のため真値表示に戻す。
     {
-      const pv = m.playerTeam === 'blue' ? this.blueVis : this.redVis;
+      const pv = this.visFor(m.playerTeam);
       const pl = m.player;
       if (!pl.retry) {
         const est = m.localizer.est;
@@ -1436,7 +1508,7 @@ export class SimViewer {
         const { pts, n } = scanToLocalPoints(scan);
         for (let i = 0; i < n && k < 600; i++, k++) {
           const [wx, wz] = localToWorld(pts[i * 2]!, pts[i * 2 + 1]!, lidarEst);
-          this.lidarPos.setXYZ(k, wx, LIDAR_SCAN_HEIGHT, wz);
+          this.lidarPos.setXYZ(k, wx, scan.mount.y, wz);
         }
       }
       this.lidarPts.geometry.setDrawRange(0, k);
@@ -1451,7 +1523,7 @@ export class SimViewer {
       const k = Math.min(n, 280);
       for (let i = 0; i < k; i++) {
         const [wx, wz] = localToWorld(pts[i * 2]!, pts[i * 2 + 1]!, lidarEst);
-        this.upperPos.setXYZ(i, wx, LIDAR_UPPER_HEIGHT, wz);
+        this.upperPos.setXYZ(i, wx, m.lastUpperScan.mount.y, wz);
       }
       this.upperPts.geometry.setDrawRange(0, k);
       this.upperPos.needsUpdate = true;
@@ -2290,8 +2362,9 @@ export class SimViewer {
   }
 
   private movingBucketWorld(r: { x: number; z: number; theta: number; bucketTopY: number }): THREE.Vector3 {
-    const bx = 0.24;
-    const bz = -0.24;
+    // ⚠ CAD の移動バケツは中心線上の 70mm 後ろ（`ROBOT.bucket`）
+    const bx = ROBOT.bucket.x;
+    const bz = ROBOT.bucket.z;
     const c = Math.cos(r.theta);
     const s = Math.sin(r.theta);
     return new THREE.Vector3(

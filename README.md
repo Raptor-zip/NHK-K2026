@@ -12,6 +12,7 @@
 | `simulator.md` | シミュレーターの設計・検証ループ運用・強化学習の見通し（未経験者向け解説） |
 | `viewer/` | **試合シミュレーター** (Vite + Svelte 5 + TypeScript strict + three.js) |
 | `gpusim/` | 雑巾（布）弾道のGPUバッチ物理シム (PyTorch / CUDA) |
+| `cad/` | **機体TRの実機設計** (build123d → STEP / URDF、規定適合と干渉の自動検証つき) |
 
 ## シミュレーター
 

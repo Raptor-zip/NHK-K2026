@@ -4,6 +4,29 @@ node_modules/
 __pycache__/
 *.pyc
 
+# CAD の生成物（src/ のパラメータから再生成できるもののみ無視する）
+# 追跡するもの: cad/src/**, cad/scripts/**, cad/urdf/tr_urdf.py, cad/DESIGN.md
+# ⚠ ディレクトリごと（`cad/out/`）無視すると、git は**中を見ない**ので
+#   下の `!` の例外が一切効かない。`cad/out/*` と書くこと。
+cad/out/*
+cad/urdf/meshes/
+cad/urdf/*.urdf
+# ⚠ **トポロジー最適化の輪郭と基準は生成物ではなく入力**。
+#   `cad/out/topo/<板>.json` は `L.topo_plate` が読む板の外形そのもので、
+#   これが無いと STEP が作れない。しかも組立からは再生成できない
+#   （最適化済みの板を測ると基準が動く。`_base.json` がその凍結）。
+#   解き直すには 10 分かかるうえ、乱数ではないが反復回数で微妙に変わる。
+!cad/out/topo/
+cad/out/topo/*
+!cad/out/topo/*.json
+# `_parts.json` だけは生成物（組立を測り直せば作れる。2 分）。
+cad/out/topo/_parts.json
+# ⚠ **ねじの位置も同じ理由で入力**。`cad/out/screws.json` は
+#   `tr_assembly.auto_screws()` が読む 345 本の置き場所で、これが無いと
+#   宣言だけあって図にねじが無い状態（元の 148 本）に戻る。
+#   解き直すには 12 分かかる（接触面の内点判定を 2 姿勢ぶん回す）。
+!cad/out/screws.json
+
 # Cloudflare Wrangler のローカル状態・キャッシュ（アカウント情報を含む）
 .wrangler/
 
@@ -23,3 +46,22 @@ x-version.md
 *.pdf
 # 公式ルールの書き起こし（.md も原著作権はNHK・主催者に帰属するため非追跡）
 official_rule/
+# メーカー提供の CAD データ（MISUMI 等）。
+# 「CADデータ・簡易図面データ利用規定」に同意して各自ダウンロードするもので、
+# 再配布はしない。取得手順は cad/vendor/misumi/README.md に書いてある。
+cad/vendor/
+
+# ビューアが配る URDF とリンクメッシュ（21MB）。
+# ⚠ **生成物**で、`cad/urdf/` から `npm run urdf:sync` で作り直せる。
+#   手で入れた素材ではないので public/ の中でもここだけ無視する。
+viewer/public/urdf/
+
+# プロモ映像（Blender）の生成物。scene.py / shots.py から作り直せる。
+# ⚠ `cad/promo/hdri/` は Poly Haven の CC0 素材で、こちらもスクリプトで
+#   取り直せる（cad/promo/README.md に URL）。バイナリなので追跡しない。
+cad/promo/out/
+cad/promo/*.blend
+cad/promo/*.blend[0-9]
+cad/promo/hdri/
+# 表示器に映す画。`promo/screen.py` が描く（Pillow だけで作れる）。
+cad/promo/tex/

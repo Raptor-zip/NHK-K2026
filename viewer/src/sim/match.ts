@@ -8,6 +8,8 @@ import {
   DIMS,
   mirror,
   FLAG_CLOTH_DIR,
+  resupPose,
+  ROBOT,
   type GoalKey,
   type TeamId,
   type ThrowTargetKey,
@@ -22,9 +24,23 @@ import {
 import { mulberry32, type Rng } from './rng';
 import { solveShot } from './ballistics';
 import { wheelOmegas, strafeSpeed } from './mecanum';
-import { castScan, getUpperSegs, type LidarScan } from './lidar';
+import {
+  castScan,
+  getUpperSegs,
+  LIDAR_HIGH,
+  LIDAR_LOW_FRONT,
+  LIDAR_LOW_REAR,
+  type LidarScan,
+} from './lidar';
 import { Localizer, OpponentTracker } from './estimator';
-import { chassisObstacles, pointBlocked, resolveCircle, ROBOT_R } from './collision';
+import {
+  chassisObstacles,
+  pointBlocked,
+  resolveCircle,
+  ROBOT_HALF_LEN,
+  ROBOT_R,
+  SQUARE_TOL,
+} from './collision';
 import { planPath } from './pathfind';
 import { buildBlueScript, buildRedScript, initialPose } from './scripts';
 import { planOptimal, type OptimalContext } from './optimal';
@@ -82,6 +98,11 @@ interface PhysGoal {
 }
 
 const MATCH_LEN = 180;
+
+/** 補充机への最終寄せ [m/s]。strategy.md §位置決め / tr_control.py CREEP */
+const CREEP_SPEED = 0.1;
+/** クリープに落とす距離 [m]。strategy.md の「机正面150mmまで定型アプローチ」 */
+const CREEP_ZONE = 0.15;
 const BUZZERS = [30, 60, 120, 150] as const;
 const PROJ_DT = 1 / 120;
 
@@ -311,7 +332,7 @@ export class MatchSim {
       cur: null,
       actT: 0,
       throwsLeft: 0,
-      anim: { feed: -1, grab: -1, wheels: [0, 0, 0, 0], wheelOmega: [0, 0, 0, 0], strafe: 0 },
+      anim: { feed: -1, grab: -1, grabDur: 8, wheels: [0, 0, 0, 0], wheelOmega: [0, 0, 0, 0], strafe: 0 },
       aim: null,
       swerve,
       moduleDir: pose.theta,
@@ -336,9 +357,9 @@ export class MatchSim {
   }
 
   private movingBucketAimPoint(r: RobotState): { x: number; y: number; z: number } {
-    // RobotVisual と同じ局所配置。移動バケツは車体中心ではなくマスト側にある。
-    const bx = 0.24;
-    const bz = -0.24;
+    // ⚠ 移動バケツは車体中心ではない。CAD は中心線上の 70mm 後ろ（ROBOT.bucket）。
+    const bx = ROBOT.bucket.x;
+    const bz = ROBOT.bucket.z;
     const c = Math.cos(r.theta);
     const s = Math.sin(r.theta);
     return {
@@ -646,9 +667,9 @@ export class MatchSim {
         });
       } else if (pr.goalKey === 'moving') {
         const carrier = this.other(pr.team);
-        const localX = 0.24 + (this.rng() - 0.5) * 0.11;
+        const localX = ROBOT.bucket.x + (this.rng() - 0.5) * 0.11;
         const localY = carrier.bucketTopY - 0.11;
-        const localZ = -0.24 + (this.rng() - 0.5) * 0.11;
+        const localZ = ROBOT.bucket.z + (this.rng() - 0.5) * 0.11;
         const c = Math.cos(carrier.theta);
         const s = Math.sin(carrier.theta);
         this.hung.push({
@@ -854,8 +875,14 @@ export class MatchSim {
     r.status = '原点出し中 (非常停止解除・機構初期化)';
     const hp = clamp(retry.t / 4, 0, 1);
     const damp = 1 - hp;
-    r.turretYaw = Math.sin(hp * Math.PI * 4) * 0.55 * damp;
-    r.turretPitch = 0.4 + Math.sin(hp * Math.PI * 6) * 0.14 * damp;
+    // 復旧の首振り。⚠ 振り幅も可動域の内側に収める（演出でも機構は超えない）
+    const YL = this.par.turret.yawLimit;
+    r.turretYaw = clamp(Math.sin(hp * Math.PI * 4) * 0.55 * damp, -YL, YL);
+    r.turretPitch = clamp(
+      0.4 + Math.sin(hp * Math.PI * 6) * 0.14 * damp,
+      this.par.turret.pitchMin,
+      this.par.turret.pitchMax,
+    );
     r.rollerTargetRpm = retry.t < 1.4 ? 1600 : 0;
     if (retry.t >= 4.0) {
       r.retry = null;
@@ -909,8 +936,11 @@ export class MatchSim {
           r.thetaTarget = r.arriveTheta; // 移動開始から回頭を始める (到達時に正対済み)
           r.status = `${GOAL_LABEL[shootGoal]}の射点へ`;
         } else if (nextA && nextA.t === 'pickup') {
-          const atk = goalAimPoint(r.team, 'flag');
-          r.arriveTheta = Math.atan2(atk.x - a.x, atk.z - a.z);
+          // ⚠ **フォークは車体の後ろ（-X）にある。** 砲塔が +X なので、
+          //   補充では机に背を向ける＝攻撃方位から 180° 回る。
+          //   「側面グラバーだから旋回ゼロ」は CAD と違っていた
+          //   （`grabber_slide` の軸は (-1,0,0)）。
+          r.arriveTheta = resupPose(r.team).theta;
           r.thetaTarget = r.arriveTheta;
         } else if (nextA && nextA.t === 'throw' && nextA.goal === 'moving') {
           const opp = this.other(r.team);
@@ -1045,7 +1075,7 @@ export class MatchSim {
     switch (a.t) {
       case 'goto': {
         const path = r.path ?? [{ x: a.x, z: a.z }];
-        let arrived = this.followPath(r, path, dt, a.speed);
+        let arrived = this.followPath(r, path, dt, this.approachSpeed(r, a, path));
         const goal = path[path.length - 1]!;
         // 障害物に阻まれて目標点に密着できない場合は「可能な限り接近」で到達扱い
         if (!arrived && r.collided && r.actT > 1.5) {
@@ -1100,6 +1130,7 @@ export class MatchSim {
         break;
       case 'pickup': {
         r.anim.grab = Math.min(1, r.actT / a.dur);
+        r.anim.grabDur = a.dur;
         if (r.actT >= a.dur) {
           if (a.superRag) r.superAmmo += a.n;
           else r.ammo = Math.min(12, r.ammo + a.n);
@@ -1354,6 +1385,26 @@ export class MatchSim {
     return false;
   }
 
+  /**
+   * この goto に許す速度。補充机への最終寄せだけ**クリープ**に落とす。
+   *
+   * ⚠ 机には 30mm まで寄せる。巡航 2.0m/s のまま突っ込む機体は実機に無い。
+   *   strategy.md §「位置決め」:「机正面150mmまで定型アプローチ →
+   *   ToF測距×2で机エッジと平行度を最終合わせ → クリープ速度0.1m/sで挿入位置へ」。
+   *   実機制御 `cad/control/tr_control.py` の CREEP も 0.10m/s。
+   *   ここを入れないと、机の手前で急停止する不自然な動きになるうえ、
+   *   補充のサイクルタイムを実機より短く見積もる。
+   */
+  private approachSpeed(r: RobotState, a: Action & { t: 'goto' }, path: Vec2[]): number | undefined {
+    const next = r.queue[0];
+    if (!next || next.t !== 'pickup') return a.speed;
+    const end = path[path.length - 1]!;
+    const d = Math.hypot(end.x - r.x, end.z - r.z);
+    if (d > CREEP_ZONE) return a.speed;
+    // 減速は加速度制限に任せる（ここは上限だけ与える）
+    return Math.min(a.speed ?? this.par.drive.vmax, CREEP_SPEED);
+  }
+
   private driveToward(
     r: RobotState,
     tx: number,
@@ -1545,16 +1596,17 @@ export class MatchSim {
     r.vz += az * sc;
     r.thetaTarget = wrapAngle(r.thetaTarget + this.manual.rot * 2.4 * dt);
     if (this.controlMode === 'fps') {
-      // マウス照準: 砲塔を絶対方位へ
-      r.turretYaw = Math.max(-2.4, Math.min(2.4, wrapAngle(this.manual.aimYaw - r.theta)));
-      r.turretPitch = this.manual.aimPitch;
+      // マウス照準: 砲塔を絶対方位へ。⚠ 砲塔は ±30° しか回らないので、
+      //   足りないぶんは**車体が回って埋める**（実機と同じ）。
+      r.turretPitch = clamp(this.manual.aimPitch, this.par.turret.pitchMin, this.par.turret.pitchMax);
+      this.aimWithBase(r, this.manual.aimYaw);
       r.rollerTargetRpm = (this.manual.power / (Math.PI * this.par.shooter.rollerDia)) * 60;
     } else if (this.controlMode === 'tps') {
       // TPS: カーソルの狙い点に向けて砲塔+弾道を自動解算 (クリックで即射出できる状態を維持)
       const t = this.manual.target;
       if (t) {
         const yaw = Math.atan2(t.x - r.x, t.z - r.z);
-        r.turretYaw = Math.max(-2.4, Math.min(2.4, wrapAngle(yaw - r.theta)));
+        this.aimWithBase(r, yaw);
         const d = Math.max(0.3, Math.hypot(t.x - r.x, t.z - r.z) - 0.4);
         const dy = t.y - r.muzzleY;
         // 高い的 (旗の横棒など) は高弧を優先: 低伸弾道より上下の当たり余裕が大きい
@@ -1571,6 +1623,23 @@ export class MatchSim {
         }
       }
     }
+  }
+
+  /**
+   * 世界方位 `wantYaw` へ狙う。砲塔だけでは足りないぶんは車体を回して埋める。
+   *
+   * ⚠ **この機体の砲塔は ±30° しか回らない**（旋回リングとケーブル取り回し）。
+   *   照準を砲塔だけに任せると、実機では届かない角度で当てる試合になる。
+   *   足りないぶんを車体に渡すのは「絵合わせ」ではなく、実機で必ずやる操作。
+   *   全方向移動なので、回頭しても並進は落ちない。
+   */
+  private aimWithBase(r: RobotState, wantYaw: number): void {
+    const YL = this.par.turret.yawLimit;
+    const rel = wrapAngle(wantYaw - r.theta);
+    r.turretYaw = clamp(rel, -YL, YL);
+    // 砲塔が端に張り付いているあいだだけ、車体をその向きへ寄せる。
+    // 余裕があるときに車体を動かすと、手動操作の向きと喧嘩する。
+    if (Math.abs(rel) > YL * 0.92) r.thetaTarget = wantYaw;
   }
 
   /**
@@ -1759,7 +1828,21 @@ export class MatchSim {
     if (r.powered && !this.over) {
       r.x += r.vx * dt;
       r.z += r.vz * dt;
-      const res = resolveCircle(r.x, r.z, ROBOT_R, chassisObstacles(r.team));
+      // ⚠ **円のままでは机に 79mm 余計に離れる。** 補充机には後ろ向きで正対して
+      //   寄せる（ToF 2 個で平行を出す）ので、効くのは車体後端 421mm であって
+      //   外接円 500mm ではない。正対しているときだけ実効半径を落とす。
+      //   ここを緩めないと、櫛歯が山の手前 65mm で止まって掬えない。
+      const want = resupPose(r.team);
+      const squared =
+        r.queue[0]?.t === 'pickup' || r.cur?.t === 'pickup'
+          ? Math.abs(wrapAngle(r.theta - want.theta)) < SQUARE_TOL
+          : false;
+      const res = resolveCircle(
+        r.x,
+        r.z,
+        squared ? ROBOT_HALF_LEN : ROBOT_R,
+        chassisObstacles(r.team),
+      );
       if (res.hit) {
         r.x = res.x;
         r.z = res.z;
@@ -1854,12 +1937,21 @@ export class MatchSim {
       const yawVmax = r.aim ? this.par.turret.yawRate : 2.0;
       const yawVDes = clamp(yawErr * 5, -yawVmax, yawVmax);
       r.turretYawVel += clamp(yawVDes - r.turretYawVel, -ACC * dt, ACC * dt);
-      r.turretYaw = clamp(r.turretYaw + r.turretYawVel * dt, -2.4, 2.4);
+      // ⚠ 可動域は **CAD が決めている**（旋回リング + ケーブル取り回しで ±30°）。
+      //   ここを緩めると、実機では出せない角度で命中させる試合になる。
+      //   端に当たったら角速度も殺す（当たったまま指令が積み上がると、
+      //   離れるときに一拍遅れて跳ねる）。
+      const YL = this.par.turret.yawLimit;
+      const yawNext = r.turretYaw + r.turretYawVel * dt;
+      r.turretYaw = clamp(yawNext, -YL, YL);
+      if (yawNext !== r.turretYaw) r.turretYawVel = 0;
       const pitchTarget = r.aim ? r.aim.angleRad : 0.4;
       const pErr = pitchTarget - r.turretPitch;
       const pVDes = clamp(pErr * 6, -2.6, 2.6);
       r.turretPitchVel += clamp(pVDes - r.turretPitchVel, -ACC * dt, ACC * dt);
-      r.turretPitch += r.turretPitchVel * dt;
+      const pitchNext = r.turretPitch + r.turretPitchVel * dt;
+      r.turretPitch = clamp(pitchNext, this.par.turret.pitchMin, this.par.turret.pitchMax);
+      if (pitchNext !== r.turretPitch) r.turretPitchVel = 0;
     }
 
     // ローラー回転数
@@ -1958,7 +2050,11 @@ export class MatchSim {
     this.manual.fireCooldown = Math.max(0, this.manual.fireCooldown - dt);
 
     // センサー + 推定 (操作チーム搭載 UST-20LX / 計測輪+ICP)
-    if (!this.headless) {
+    // ⚠ **リトライ中は焚かない。** 人が持ち上げてスタートゾーンへ運ぶ区間で、
+    //   機体は非常停止中＝計測輪も LiDAR も電源が無い。ここで ICP を回すと、
+    //   オドメトリ 0 のまま地図に引っぱられて推定が 6m 流れる（実測）。
+    //   復旧完了時に既知のスタートゾーン座標で reset するのが実機の手順。
+    if (!this.headless && !this.player.retry) {
       const p = this.player;
       const opp = this.opponent;
       this.localizer.predict(p.vx, p.vz, p.omega, dt, this.rng);
@@ -1970,11 +2066,11 @@ export class MatchSim {
         const vel = { vx: p.vx, vz: p.vz, omega: p.omega };
         const oppPose = { x: opp.x, z: opp.z, theta: opp.theta };
         // 下段 UST-20LX ×2 (前向き/後ろ向き): 270°×2 = 完全360°+側方オーバーラップ
-        this.lastScan = castScan(pose, vel, oppPose, this.rng, this.t);
-        this.lastScanRear = castScan(pose, vel, oppPose, this.rng, this.t, undefined, Math.PI);
+        this.lastScan = castScan(pose, vel, oppPose, this.rng, this.t, undefined, LIDAR_LOW_FRONT);
+        this.lastScanRear = castScan(pose, vel, oppPose, this.rng, this.t, undefined, LIDAR_LOW_REAR);
         this.localizer.correct(this.lastScan, this.lastScanRear);
         // 上段LiDAR: 教壇越しに相手車体を検出
-        this.lastUpperScan = castScan(pose, vel, oppPose, this.rng, this.t, getUpperSegs());
+        this.lastUpperScan = castScan(pose, vel, oppPose, this.rng, this.t, getUpperSegs(), LIDAR_HIGH);
         this.oppTracker.update(this.lastUpperScan, this.localizer.est, 0.1);
       }
     }
@@ -2052,8 +2148,8 @@ export class MatchSim {
       });
     } else if (key === 'moving' && movingCarrier) {
       const carrier = movingCarrier === 'blue' ? this.blue : this.red;
-      const localX = 0.24 + (this.rng() - 0.5) * 0.1;
-      const localZ = -0.24 + (this.rng() - 0.5) * 0.1;
+      const localX = ROBOT.bucket.x + (this.rng() - 0.5) * 0.1;
+      const localZ = ROBOT.bucket.z + (this.rng() - 0.5) * 0.1;
       this.hung.push({
         id: pr.id, x: at.x, y: carrier.bucketTopY - 0.11, z: at.z,
         attachedTo: carrier.team, localX, localY: carrier.bucketTopY - 0.11, localZ,

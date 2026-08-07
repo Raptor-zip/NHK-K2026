@@ -92,7 +92,9 @@ export interface RobotState {
   throwsLeft: number;
   anim: {
     feed: number; // 0..1 送給中
-    grab: number; // 0..1 グラバー動作中
+    grab: number; // 0..1 グラバー動作中 (-1 = 動作していない)
+    /** そのピックアップに与えた総時間 [s]。工程の切れ目を実速度で決めるのに使う */
+    grabDur: number;
     wheels: [number, number, number, number]; // 積算回転角 rad
     wheelOmega: [number, number, number, number];
     strafe: number;

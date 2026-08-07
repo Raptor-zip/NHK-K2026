@@ -140,13 +140,78 @@ export function goalAimPoint(team: TeamId, key: GoalKey): { x: number; y: number
   }
 }
 
+/**
+ * 機体の寸法 [m]。⚠ **すべて CAD から来た値**で、ここで丸めない。
+ * 出どころは `cad/src/tr_params.py` と `cad/urdf/tr.urdf`。
+ */
+export const ROBOT = {
+  /** 車体後端（base_link の -X 端）。cad の chassis collision -421mm */
+  rearOverhang: 0.421,
+  /** 車体前端（+X 端）。同 +421mm */
+  frontOverhang: 0.421,
+  /** 櫛歯の先端が届く範囲（base_link の -X 側）。
+   *  全閉 = RAIL_X0 - FORK_TINE_EXT = 275.4 + 89 = 364.4mm
+   *  全開 = さらに GRAB_STROKE 316mm = 680.4mm（規定の「山の遠端 -680」に届く） */
+  forkReachMin: 0.3644,
+  forkReachMax: 0.6804,
+  /** 櫛歯の上面高さ。歯下面 761mm = 机上面 760 + 1mm */
+  forkTopY: 0.763,
+  /** 机に寄せるときのすきま。レーザ測距の分解能と操縦の余裕 */
+  deskClearance: 0.03,
+  /**
+   * 移動バケツ（自陣が的として担ぐ方）。⚠ **車体中心ではない。**
+   * CAD は `tr_assembly.BUCKET_X = -70mm` / `y = 0`、マスト上端に座る。
+   * 局所座標はビューア流儀（X 左 / Z 前）なので、URDF の (x=-70, y=0) は
+   * ここでは (x=0, z=-0.070)＝**中心線上の 70mm 後ろ**になる。
+   * 以前は (0.24, -0.24) と斜め後ろに置いていて、CAD 実形状で描くと
+   * 弾がバケツの脇 340mm を素通りしていた。
+   */
+  bucket: {
+    x: 0,
+    z: -0.07,
+    /** 上面 = BUCKET_SEAT_Z(1175) + BUCKET_H(255)。規定 3.2.3b の 1200..2100 内 */
+    topY: 1.43,
+    /** エンテック PO-24A φ273 */
+    r: 0.1365,
+  },
+} as const;
+
+/**
+ * 補充机に付けるときの機体ポーズ。
+ *
+ * ⚠ **フォークは車体の後ろ（base_link の -X）にある。** 砲塔は +X なので、
+ *   補充のときは**攻撃方位とは逆を向く**（机に背を向ける）。
+ *   「側面グラバーだから車体旋回ゼロ」は CAD と違う。実際 CAD の
+ *   `grabber_slide` は軸 (-1,0,0) で、櫛歯は -X へ 316mm 出る。
+ *
+ * 位置は「車体後端が机の縁の手前 30mm」。このとき櫛歯の先端は
+ * 机の縁から 680.4 - 421 - 30 = 229mm 入った所まで届く（机の奥行 450mm の
+ * 中央 225mm を越える＝山の向こう側に歯が入る）。
+ */
+export function resupPose(team: TeamId): { x: number; z: number; theta: number } {
+  const s = team === 'blue' ? 1 : -1;
+  const desk = homePos(team, 'resup');
+  const nearEdge = desk.z + (DIMS.resupDesk.wz / 2) * s; // スタートゾーン側の縁
+  return {
+    x: desk.x,
+    z: nearEdge + (ROBOT.rearOverhang + ROBOT.deskClearance) * s,
+    // 前方 = (sinθ, cosθ)。後ろを机（-s 方向）へ向ける → 前方は +s
+    theta: s > 0 ? 0 : Math.PI,
+  };
+}
+
+/** 櫛歯の先端が机の縁から何 m 入るか（全開時）。負なら届いていない */
+export function forkPenetration(): number {
+  return ROBOT.forkReachMax - ROBOT.rearOverhang - ROBOT.deskClearance;
+}
+
 /** 主要ウェイポイント (team の自陣座標系: blue は z>0) */
 export function waypoints(team: TeamId) {
   const s = team === 'blue' ? 1 : -1;
   return {
     start: { x: 4.75, z: 1.8 * s },
-    /** 補充机の開口 (スタートゾーン側) 正面。机 z縁±0.225 + 車体半径 + 余裕 */
-    resupFront: { x: 4.75, z: 1.85 * s },
+    /** 補充机の開口 (スタートゾーン側) 正面。⚠ CAD 由来 (`resupPose`) */
+    resupFront: { x: resupPose(team).x, z: resupPose(team).z },
     /** ボーナス走の射撃点 (教壇際に各ゴール正面) */
     fireDesk1: { x: 2.295, z: 0.95 * s },
     fireB2: { x: 1.27, z: 0.95 * s },

@@ -113,6 +113,10 @@
             <span>自分の顔 (要カメラ)</span>
             <span class="ui-switch"><input type="checkbox" bind:checked={$prefs.faceCam} /><span class="knob"></span></span>
           </label>
+          <label class="field toggle">
+            <span>機体をCAD実形状で描く</span>
+            <span class="ui-switch"><input type="checkbox" bind:checked={$prefs.cadRobot} /><span class="knob"></span></span>
+          </label>
           <label class="field">
             <span>投擲角ばらつき°</span>
             <input class="ui-num" type="number" min="0.5" max="8" step="0.1" bind:value={$prefs.params.aimSpreadDeg} />

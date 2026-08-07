@@ -1,0 +1,13656 @@
+{
+ "bc": "95a7863e63469387",
+ "screws": [
+  {
+   "name": "scr_a0001",
+   "a": "cam_brk",
+   "b": "aim_camera",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    390.0,
+    -324.0,
+    631.25
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0002",
+   "a": "cam_brk",
+   "b": "aim_camera",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    390.0,
+    -332.0,
+    608.75
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0003",
+   "a": "car_side_L",
+   "b": "belt_clamp_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -118.0,
+    316.9,
+    809.214
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "rail_in_L"
+   ],
+   "note": "ベルトを歯で挟む板 2 枚 + 2-M4"
+  },
+  {
+   "name": "scr_a0004",
+   "a": "beltbrk_drv_L",
+   "b": "grab_motor_arm",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -71.25,
+    336.0,
+    874.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0005",
+   "a": "beltbrk_drv_L",
+   "b": "grab_motor_arm",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -63.75,
+    336.0,
+    874.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "scr_a0004"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0006",
+   "a": "beltbrk_drv_L",
+   "b": "rail_plate_L",
+   "link": "rails",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -60.0,
+    333.0,
+    826.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [
+    "topbeam1_L"
+   ],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0007",
+   "a": "beltbrk_drv_L",
+   "b": "rail_plate_L",
+   "link": "rails",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -46.389,
+    333.0,
+    830.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [
+    "topbeam1_L"
+   ],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0008",
+   "a": "beltbrk_drv_R",
+   "b": "rail_plate_R",
+   "link": "rails",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -38.611,
+    -333.0,
+    826.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [
+    "topbeam1_R"
+   ],
+   "touch": [
+    "scr_a0007"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0009",
+   "a": "beltbrk_drv_R",
+   "b": "rail_plate_R",
+   "link": "rails",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -69.722,
+    -333.0,
+    826.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [
+    "topbeam1_R"
+   ],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0010",
+   "a": "beltbrk_idl_L",
+   "b": "topbeam0_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -424.3,
+    337.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0011",
+   "a": "beltbrk_idl_L",
+   "b": "topbeam0_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -412.9,
+    337.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "scr_a0010"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0012",
+   "a": "beltbrk_idl_R",
+   "b": "topbeam0_R",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -401.5,
+    -337.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "scr_a0011"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0013",
+   "a": "deck_plate",
+   "b": "breaker",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.25,
+    -16.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0014",
+   "a": "deck_plate",
+   "b": "breaker",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -323.75,
+    16.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0015",
+   "a": "deck_plate",
+   "b": "breaker",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.25,
+    8.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0016",
+   "a": "deck_plate",
+   "b": "breaker",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -323.75,
+    -8.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0017",
+   "a": "yaw_side_L",
+   "b": "brk_lift_L0",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -95.515,
+    315.5,
+    22.184
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0018",
+   "a": "yaw_side_L",
+   "b": "brk_lift_L0",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -91.269,
+    315.5,
+    28.738
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0019",
+   "a": "brk_yaw_Lf",
+   "b": "brk_yaw_Lfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    109.974,
+    308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0020",
+   "a": "brk_yaw_Lf",
+   "b": "brk_yaw_Lfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    179.053,
+    308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "yaw_arm_f"
+   ],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0021",
+   "a": "brk_yaw_Lf",
+   "b": "yaw_arm_f",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    134.077,
+    308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Lfv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0022",
+   "a": "brk_yaw_Lf",
+   "b": "yaw_arm_f",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    144.269,
+    308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Lfv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0023",
+   "a": "yaw_side_L",
+   "b": "brk_yaw_Lfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    111.5,
+    315.5,
+    61.682
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M5"
+  },
+  {
+   "name": "scr_a0024",
+   "a": "yaw_side_L",
+   "b": "brk_yaw_Lfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    111.5,
+    315.5,
+    71.909
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M5"
+  },
+  {
+   "name": "scr_a0025",
+   "a": "brk_yaw_Lr",
+   "b": "brk_yaw_Lrv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -111.947,
+    308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0026",
+   "a": "brk_yaw_Lr",
+   "b": "brk_yaw_Lrv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -181.026,
+    308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "yaw_arm_r"
+   ],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0027",
+   "a": "brk_yaw_Lr",
+   "b": "yaw_arm_r",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -170.769,
+    308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Lrv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0028",
+   "a": "brk_yaw_Lr",
+   "b": "yaw_arm_r",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -160.577,
+    308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Lrv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0029",
+   "a": "yaw_side_L",
+   "b": "brk_yaw_Lrv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -111.5,
+    315.5,
+    69.864
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M5"
+  },
+  {
+   "name": "scr_a0030",
+   "a": "brk_yaw_Rf",
+   "b": "brk_yaw_Rfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    109.974,
+    -308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0031",
+   "a": "brk_yaw_Rf",
+   "b": "brk_yaw_Rfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    179.053,
+    -308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "yaw_arm_f"
+   ],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0032",
+   "a": "brk_yaw_Rf",
+   "b": "yaw_arm_f",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    134.077,
+    -308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Rfv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0033",
+   "a": "brk_yaw_Rf",
+   "b": "yaw_arm_f",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    144.269,
+    -308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Rfv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0034",
+   "a": "yaw_side_R",
+   "b": "brk_yaw_Rfv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    111.5,
+    -315.5,
+    45.318
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M5"
+  },
+  {
+   "name": "scr_a0035",
+   "a": "brk_yaw_Rr",
+   "b": "brk_yaw_Rrv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -111.947,
+    -308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0036",
+   "a": "brk_yaw_Rr",
+   "b": "brk_yaw_Rrv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -181.026,
+    -308.5,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "yaw_arm_r"
+   ],
+   "note": "2-M4 皿（立板の下の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0037",
+   "a": "brk_yaw_Rr",
+   "b": "yaw_arm_r",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -170.769,
+    -308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Rrv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0038",
+   "a": "brk_yaw_Rr",
+   "b": "yaw_arm_r",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "HEXNUT",
+     5
+    ],
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -160.577,
+    -308.5,
+    31.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "brk_yaw_Rrv"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0039",
+   "a": "yaw_side_R",
+   "b": "brk_yaw_Rrv",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -111.5,
+    -315.5,
+    45.318
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M5"
+  },
+  {
+   "name": "scr_a0040",
+   "a": "cab_saddle_fl0",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    -26.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0041",
+   "a": "cab_saddle_fl0",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    -14.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0042",
+   "a": "cab_saddle_fl1",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    104.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0043",
+   "a": "cab_saddle_fl1",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    116.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0044",
+   "a": "cab_saddle_rl0",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    -166.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "cab_drive_rl"
+   ],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0045",
+   "a": "cab_saddle_rl0",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    -154.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "cab_drive_rl"
+   ],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0046",
+   "a": "cab_saddle_rl1",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    -221.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0047",
+   "a": "cab_saddle_rl1",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    -209.0,
+    298.0,
+    125.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "cab_drive_rl"
+   ],
+   "note": "内桁の外面へ 2-M4"
+  },
+  {
+   "name": "scr_a0048",
+   "a": "cam_brk",
+   "b": "post_front_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    393.0,
+    -350.0,
+    596.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0049",
+   "a": "cam_brk",
+   "b": "post_front_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    393.0,
+    -350.0,
+    640.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "aim_camera"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0050",
+   "a": "car_beam",
+   "b": "car_beam_eL",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    11.6,
+    307.9,
+    764.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M4（耳の下の端面にタップ。梁は貫通）"
+  },
+  {
+   "name": "scr_a0051",
+   "a": "car_beam",
+   "b": "car_beam_eL",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    19.6,
+    307.9,
+    764.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M4（耳の下の端面にタップ。梁は貫通）"
+  },
+  {
+   "name": "scr_a0052",
+   "a": "car_beam",
+   "b": "car_beam_eR",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    11.6,
+    -307.9,
+    764.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M4（耳の下の端面にタップ。梁は貫通）"
+  },
+  {
+   "name": "scr_a0053",
+   "a": "car_beam",
+   "b": "car_beam_eR",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    19.6,
+    -307.9,
+    764.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 2-M4（耳の下の端面にタップ。梁は貫通）"
+  },
+  {
+   "name": "scr_a0054",
+   "a": "car_side_L",
+   "b": "car_beam_eL",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    5.6,
+    316.9,
+    771.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 5.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M4"
+  },
+  {
+   "name": "scr_a0055",
+   "a": "car_side_L",
+   "b": "car_beam_eL",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    31.6,
+    316.9,
+    771.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 5.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M4"
+  },
+  {
+   "name": "scr_a0056",
+   "a": "car_brk_L",
+   "b": "car_brk_Lv",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -184.289,
+    307.9,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 13.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の上の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0057",
+   "a": "car_brk_L",
+   "b": "car_brk_Lv",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -248.456,
+    307.9,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 13.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の上の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0058",
+   "a": "press_post_Lf0",
+   "b": "car_brk_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -238.477,
+    222.0,
+    816.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [
+    "press_post_L"
+   ],
+   "note": "2-M4（受け金具へ）"
+  },
+  {
+   "name": "scr_a0059",
+   "a": "press_post_Lf0",
+   "b": "car_brk_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -230.785,
+    222.0,
+    816.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [
+    "press_post_L"
+   ],
+   "note": "2-M4（受け金具へ）"
+  },
+  {
+   "name": "scr_a0060",
+   "a": "car_side_L",
+   "b": "car_brk_Lv",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -195.956,
+    316.9,
+    804.167
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 5.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [
+    "rail_in_L"
+   ],
+   "note": "3-M4"
+  },
+  {
+   "name": "scr_a0061",
+   "a": "car_brk_R",
+   "b": "car_brk_Rv",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -186.233,
+    -307.9,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 13.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の上の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0062",
+   "a": "car_brk_R",
+   "b": "car_brk_Rv",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -246.511,
+    -307.9,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 13.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 皿（立板の上の端面にタップ。水平板は皿もみ）"
+  },
+  {
+   "name": "scr_a0063",
+   "a": "press_post_Rf0",
+   "b": "car_brk_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -238.477,
+    -222.0,
+    816.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [
+    "press_post_R"
+   ],
+   "note": "2-M4（受け金具へ）"
+  },
+  {
+   "name": "scr_a0064",
+   "a": "press_post_Rf0",
+   "b": "car_brk_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -230.785,
+    -222.0,
+    816.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [
+    "press_post_R"
+   ],
+   "note": "2-M4（受け金具へ）"
+  },
+  {
+   "name": "scr_a0065",
+   "a": "car_side_L",
+   "b": "hinge_blk_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -23.4,
+    316.9,
+    769.75
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 5.0,
+   "depth": 24.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0066",
+   "a": "car_side_L",
+   "b": "hinge_blk_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -7.4,
+    316.9,
+    769.75
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 5.0,
+   "depth": 24.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0067",
+   "a": "rail_in_L",
+   "b": "car_side_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    70.623,
+    318.4,
+    808.767
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0068",
+   "a": "rail_in_L",
+   "b": "car_side_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -259.491,
+    318.4,
+    795.039
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0069",
+   "a": "rail_in_L",
+   "b": "car_side_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -132.218,
+    318.4,
+    795.039
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0070",
+   "a": "rail_in_L",
+   "b": "car_side_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -68.582,
+    318.4,
+    795.039
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0071",
+   "a": "rail_in_L",
+   "b": "car_side_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -193.866,
+    318.4,
+    795.039
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 5.0,
+   "thru": [
+    "car_brk_Lv"
+   ],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0072",
+   "a": "rail_in_L",
+   "b": "car_side_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -271.423,
+    318.4,
+    795.039
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0073",
+   "a": "rail_in_R",
+   "b": "car_side_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -265.457,
+    -318.9,
+    800.922
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 2.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0074",
+   "a": "rail_in_R",
+   "b": "car_side_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -66.593,
+    -318.9,
+    802.883
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 2.0,
+   "depth": 5.0,
+   "thru": [
+    "rail_ball_R1u"
+   ],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0075",
+   "a": "rail_in_R",
+   "b": "car_side_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -136.195,
+    -318.9,
+    802.883
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 2.0,
+   "depth": 5.0,
+   "thru": [
+    "rail_ball_R1u"
+   ],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0076",
+   "a": "rail_in_R",
+   "b": "car_side_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -2.957,
+    -318.9,
+    802.883
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 2.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "インナーレールへ 6-M4"
+  },
+  {
+   "name": "scr_a0077",
+   "a": "chair_mount_1",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    188.846,
+    60.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0078",
+   "a": "chair_mount_1",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    192.692,
+    74.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0079",
+   "a": "chair_mount_1",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    227.308,
+    74.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0080",
+   "a": "chair_mount_1",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    229.231,
+    60.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0081",
+   "a": "chair_mount_2",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    427.308,
+    299.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0082",
+   "a": "chair_mount_2",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 25.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    429.231,
+    285.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0083",
+   "a": "chair_mount_3",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    388.846,
+    60.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0084",
+   "a": "chair_mount_3",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    392.692,
+    74.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0085",
+   "a": "chair_mount_3",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    427.308,
+    74.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0086",
+   "a": "chair_mount_3",
+   "b": "chair_5go",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 6.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     6
+    ]
+   ],
+   "pos": [
+    429.231,
+    60.0,
+    138.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 12.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "座板を貫通する 4-M6 + 大座金"
+  },
+  {
+   "name": "scr_a0087",
+   "a": "chair_mount_0",
+   "b": "rail_L_in",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    165.385,
+    285.0,
+    147.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 12.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0088",
+   "a": "chair_mount_1",
+   "b": "cross_xp210_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    210.0,
+    46.0,
+    147.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 12.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0089",
+   "a": "chair_mount_1",
+   "b": "cross_xp210_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    210.0,
+    70.0,
+    147.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 12.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0090",
+   "a": "chair_mount_3",
+   "b": "cross_xp410_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    410.0,
+    46.0,
+    147.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 12.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0091",
+   "a": "chair_mount_3",
+   "b": "cross_xp410_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    410.0,
+    70.0,
+    147.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 12.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0092",
+   "a": "deck_plate",
+   "b": "cross_xm110_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -116.0,
+    209.028,
+    140.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "テクセルはねじが効かないので座金付きリベット"
+  },
+  {
+   "name": "scr_a0093",
+   "a": "deck_plate",
+   "b": "cross_xm110_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 11.0,
+   "extras": [],
+   "pos": [
+    -104.0,
+    -211.019,
+    140.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "テクセルはねじが効かないので座金付きリベット"
+  },
+  {
+   "name": "scr_a0094",
+   "a": "deck_plate",
+   "b": "cross_xm210_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -216.0,
+    209.028,
+    140.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "テクセルはねじが効かないので座金付きリベット"
+  },
+  {
+   "name": "scr_a0095",
+   "a": "deck_plate",
+   "b": "cross_xm210_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 11.0,
+   "extras": [],
+   "pos": [
+    -204.0,
+    -211.019,
+    140.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 5.0,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "テクセルはねじが効かないので座金付きリベット"
+  },
+  {
+   "name": "scr_a0096",
+   "a": "skirt_rear",
+   "b": "cross_xm410_L",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -421.0,
+    299.091,
+    119.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [
+    "scr_brk_cross_xp410_L_mn_0",
+    "scr_brk_cross_xm410_L_m_1"
+   ],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0097",
+   "a": "skirt_rear",
+   "b": "cross_xm410_L",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -421.0,
+    313.409,
+    119.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0098",
+   "a": "skirt_rear",
+   "b": "cross_xm410_R",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -421.0,
+    -335.909,
+    119.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [
+    "scr_brk_cross_xp410_R_mn_0",
+    "scr_brk_cross_xm410_R_m_1"
+   ],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0099",
+   "a": "skirt_rear",
+   "b": "cross_xm410_R",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -421.0,
+    -321.591,
+    119.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0100",
+   "a": "lidar_lvl_base_rear",
+   "b": "cross_xm410_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -410.0,
+    -36.0,
+    141.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット（横材の上面）"
+  },
+  {
+   "name": "scr_a0101",
+   "a": "lidar_lvl_base_rear",
+   "b": "cross_xm410_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -410.0,
+    36.0,
+    141.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット（横材の上面）"
+  },
+  {
+   "name": "scr_a0102",
+   "a": "skirt_rear",
+   "b": "cross_xm410_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -421.0,
+    -271.014,
+    119.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [
+    "scr_brk_cross_xp410_mid_mn_0",
+    "scr_brk_cross_xp210_mid_mn_0",
+    "scr_brk_cross_xp110_mid_m_1",
+    "scr_brk_cross_xm110_mid_m_1",
+    "scr_brk_cross_xm210_mid_m_1",
+    "scr_brk_cross_xm410_mid_m_1"
+   ],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0103",
+   "a": "skirt_rear",
+   "b": "cross_xm410_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -421.0,
+    271.014,
+    119.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [
+    "scr_brk_cross_xp410_mid_pn_1",
+    "scr_brk_cross_xp210_mid_pn_1",
+    "scr_brk_cross_xp110_mid_p_0",
+    "scr_brk_cross_xm110_mid_p_0",
+    "scr_brk_cross_xm210_mid_p_0",
+    "scr_brk_cross_xm410_mid_p_0"
+   ],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0104",
+   "a": "odo_brk0",
+   "b": "cross_xp210_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    210.0,
+    -1.875,
+    109.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0105",
+   "a": "odo_brk0",
+   "b": "cross_xp210_mid",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    210.0,
+    10.375,
+    109.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0106",
+   "a": "skirt_front",
+   "b": "cross_xp410_L",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    421.0,
+    321.591,
+    119.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0107",
+   "a": "skirt_front",
+   "b": "cross_xp410_L",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    421.0,
+    335.909,
+    119.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [
+    "scr_brk_cross_xp410_L_pn_1",
+    "scr_brk_cross_xm410_L_p_0"
+   ],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0108",
+   "a": "skirt_front",
+   "b": "cross_xp410_R",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    421.0,
+    -313.409,
+    119.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0109",
+   "a": "skirt_front",
+   "b": "cross_xp410_R",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    421.0,
+    -299.091,
+    119.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [
+    "scr_brk_cross_xp410_R_pn_1",
+    "scr_brk_cross_xm410_R_p_0"
+   ],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0110",
+   "a": "skirt_front",
+   "b": "cross_xp410_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    421.0,
+    -55.797,
+    119.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0111",
+   "a": "skirt_front",
+   "b": "cross_xp410_mid",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    421.0,
+    107.609,
+    119.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "各横材に 2-φ3.2"
+  },
+  {
+   "name": "scr_a0112",
+   "a": "esc610_0",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -83.709,
+    -114.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0113",
+   "a": "esc610_0",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -118.327,
+    -127.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0114",
+   "a": "esc610_0",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -104.073,
+    -114.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0115",
+   "a": "esc610_0",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -93.891,
+    -127.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0116",
+   "a": "esc610_1",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -83.709,
+    -152.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0117",
+   "a": "esc610_1",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -118.327,
+    -139.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0118",
+   "a": "esc610_1",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -104.073,
+    -152.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0119",
+   "a": "esc610_1",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -93.891,
+    -139.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0120",
+   "a": "esc610_2",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -83.709,
+    -177.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0121",
+   "a": "esc610_2",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -118.327,
+    -164.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0122",
+   "a": "esc610_2",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -104.073,
+    -177.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0123",
+   "a": "esc610_2",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -93.891,
+    -164.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0124",
+   "a": "esc610_3",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -83.709,
+    -202.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0125",
+   "a": "esc610_3",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -118.327,
+    -189.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0126",
+   "a": "esc610_3",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -104.073,
+    -202.333,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0127",
+   "a": "esc610_3",
+   "b": "deck_plate",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -93.891,
+    -189.5,
+    142.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 2.5,
+   "depth": 5.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0128",
+   "a": "deck_plate",
+   "b": "esc620_0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    148.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0129",
+   "a": "deck_plate",
+   "b": "esc620_0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    151.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0130",
+   "a": "deck_plate",
+   "b": "esc620_0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    150.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0131",
+   "a": "deck_plate",
+   "b": "esc620_0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    151.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0132",
+   "a": "deck_plate",
+   "b": "esc620_1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    128.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0133",
+   "a": "deck_plate",
+   "b": "esc620_1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    131.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0134",
+   "a": "deck_plate",
+   "b": "esc620_1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    130.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0135",
+   "a": "deck_plate",
+   "b": "esc620_1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    131.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0136",
+   "a": "deck_plate",
+   "b": "esc620_2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    108.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0137",
+   "a": "deck_plate",
+   "b": "esc620_2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    111.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0138",
+   "a": "deck_plate",
+   "b": "esc620_2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    110.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0139",
+   "a": "deck_plate",
+   "b": "esc620_2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    111.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0140",
+   "a": "deck_plate",
+   "b": "esc620_3",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    88.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0141",
+   "a": "deck_plate",
+   "b": "esc620_3",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    91.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0142",
+   "a": "deck_plate",
+   "b": "esc620_3",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    90.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0143",
+   "a": "deck_plate",
+   "b": "esc620_3",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    91.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0144",
+   "a": "deck_plate",
+   "b": "esc620_4",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    68.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0145",
+   "a": "deck_plate",
+   "b": "esc620_4",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    71.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0146",
+   "a": "deck_plate",
+   "b": "esc620_4",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    70.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0147",
+   "a": "deck_plate",
+   "b": "esc620_4",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    71.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0148",
+   "a": "deck_plate",
+   "b": "esc620_5",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    48.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0149",
+   "a": "deck_plate",
+   "b": "esc620_5",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    51.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0150",
+   "a": "deck_plate",
+   "b": "esc620_5",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    50.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0151",
+   "a": "deck_plate",
+   "b": "esc620_5",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    51.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0152",
+   "a": "deck_plate",
+   "b": "esc620_6",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -346.085,
+    28.083,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0153",
+   "a": "deck_plate",
+   "b": "esc620_6",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -287.365,
+    31.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0154",
+   "a": "deck_plate",
+   "b": "esc620_6",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -316.725,
+    30.0,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0155",
+   "a": "deck_plate",
+   "b": "esc620_6",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -332.384,
+    31.917,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0156",
+   "a": "deck_plate",
+   "b": "mcu",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -46.0,
+    -31.111,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0157",
+   "a": "deck_plate",
+   "b": "mcu",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    46.0,
+    31.111,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0158",
+   "a": "deck_plate",
+   "b": "mcu",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -22.0,
+    31.111,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0159",
+   "a": "deck_plate",
+   "b": "mcu",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    22.0,
+    -31.111,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ（テクセルは座金）"
+  },
+  {
+   "name": "scr_a0160",
+   "a": "deck_plate",
+   "b": "pc_dcdc",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -300.583,
+    -111.533,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 9.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M2.5 + スペーサ"
+  },
+  {
+   "name": "scr_a0161",
+   "a": "deck_plate",
+   "b": "pc_dcdc",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -281.533,
+    -130.583,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 9.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M2.5 + スペーサ"
+  },
+  {
+   "name": "scr_a0162",
+   "a": "deck_plate",
+   "b": "pc_dcdc",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -300.583,
+    -130.583,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 9.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M2.5 + スペーサ"
+  },
+  {
+   "name": "scr_a0163",
+   "a": "deck_plate",
+   "b": "pc_dcdc",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -281.533,
+    -111.533,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 9.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M2.5 + スペーサ"
+  },
+  {
+   "name": "scr_a0164",
+   "a": "deck_plate",
+   "b": "pc_mini",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -243.53,
+    61.05,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 18.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ"
+  },
+  {
+   "name": "scr_a0165",
+   "a": "deck_plate",
+   "b": "pc_mini",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -160.167,
+    61.05,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 18.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ"
+  },
+  {
+   "name": "scr_a0166",
+   "a": "deck_plate",
+   "b": "pc_mini",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -162.152,
+    109.65,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 18.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ"
+  },
+  {
+   "name": "scr_a0167",
+   "a": "deck_plate",
+   "b": "pc_mini",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -243.53,
+    107.625,
+    135.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 5.0,
+   "depth": 18.5,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 + スペーサ"
+  },
+  {
+   "name": "scr_a0168",
+   "a": "disp_panel",
+   "b": "disp_frame",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -301.4,
+    91.531,
+    535.097
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3"
+  },
+  {
+   "name": "scr_a0169",
+   "a": "disp_panel",
+   "b": "disp_frame",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -301.4,
+    -93.52,
+    422.935
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3"
+  },
+  {
+   "name": "scr_a0170",
+   "a": "disp_panel",
+   "b": "disp_frame",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -301.4,
+    -35.816,
+    535.097
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3"
+  },
+  {
+   "name": "scr_a0171",
+   "a": "disp_panel",
+   "b": "disp_frame",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -301.4,
+    33.827,
+    422.935
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "disp_screen"
+   ],
+   "note": "4-M3"
+  },
+  {
+   "name": "scr_a0172",
+   "a": "estop_plate_f",
+   "b": "topbeam1_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    266.0,
+    364.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0173",
+   "a": "estop_plate_f",
+   "b": "topbeam1_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    300.0,
+    364.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "estop_f"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0174",
+   "a": "estop_plate_r",
+   "b": "estop_r",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -196.0,
+    -370.0,
+    838.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 4.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 + φ22 穴とロックリング"
+  },
+  {
+   "name": "scr_a0175",
+   "a": "estop_plate_r",
+   "b": "estop_r",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -204.0,
+    -370.0,
+    838.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 4.0,
+   "depth": 26.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 + φ22 穴とロックリング"
+  },
+  {
+   "name": "scr_a0176",
+   "a": "estop_plate_r",
+   "b": "topbeam1_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -234.0,
+    -350.0,
+    842.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0177",
+   "a": "estop_plate_r",
+   "b": "topbeam1_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -166.0,
+    -350.0,
+    842.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0178",
+   "a": "fork_root",
+   "b": "fork_clamp0",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    -211.0,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine0"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0179",
+   "a": "fork_root",
+   "b": "fork_clamp0",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    -205.0,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine0",
+    "scr_a0178"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0180",
+   "a": "fork_root_v",
+   "b": "fork_clamp0",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -15.0,
+    -199.0,
+    9.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 1-M3（クランプの側面へ水平に）"
+  },
+  {
+   "name": "scr_a0181",
+   "a": "fork_root",
+   "b": "fork_clamp1",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    -108.5,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine1"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0182",
+   "a": "fork_root",
+   "b": "fork_clamp1",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    -102.5,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine1",
+    "scr_a0181"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0183",
+   "a": "fork_root_v",
+   "b": "fork_clamp1",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -15.0,
+    -96.5,
+    9.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 1-M3（クランプの側面へ水平に）"
+  },
+  {
+   "name": "scr_a0184",
+   "a": "fork_root",
+   "b": "fork_clamp2",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    -6.0,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine2"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0185",
+   "a": "fork_root",
+   "b": "fork_clamp2",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    0.0,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine2",
+    "scr_a0184"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0186",
+   "a": "fork_root_v",
+   "b": "fork_clamp2",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -15.0,
+    6.0,
+    9.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 1-M3（クランプの側面へ水平に）"
+  },
+  {
+   "name": "scr_a0187",
+   "a": "fork_root",
+   "b": "fork_clamp3",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    96.5,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine3"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0188",
+   "a": "fork_root",
+   "b": "fork_clamp3",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    102.5,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine3",
+    "scr_a0187"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0189",
+   "a": "fork_root_v",
+   "b": "fork_clamp3",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -15.0,
+    108.5,
+    9.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 1-M3（クランプの側面へ水平に）"
+  },
+  {
+   "name": "scr_a0190",
+   "a": "fork_root",
+   "b": "fork_clamp4",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    199.0,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine4"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0191",
+   "a": "fork_root",
+   "b": "fork_clamp4",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -8.0,
+    205.0,
+    -8.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [
+    "tine4",
+    "scr_a0190"
+   ],
+   "note": "各 2-M3（クランプを底板へ）"
+  },
+  {
+   "name": "scr_a0192",
+   "a": "fork_root_v",
+   "b": "fork_clamp4",
+   "link": "fork",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -15.0,
+    211.0,
+    9.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 12.0,
+   "thru": [],
+   "touch": [],
+   "note": "各 1-M3（クランプの側面へ水平に）"
+  },
+  {
+   "name": "scr_a0193",
+   "a": "tine0",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -24.0,
+    -211.0,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0194",
+   "a": "tine0",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -18.0,
+    -201.0,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0195",
+   "a": "tine1",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -24.0,
+    -108.5,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0196",
+   "a": "tine1",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -18.0,
+    -98.5,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0197",
+   "a": "tine2",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -24.0,
+    -6.0,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0198",
+   "a": "tine2",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -18.0,
+    4.0,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0199",
+   "a": "tine3",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -24.0,
+    96.5,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0200",
+   "a": "tine3",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -18.0,
+    106.5,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0201",
+   "a": "tine4",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -24.0,
+    199.0,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0202",
+   "a": "tine4",
+   "b": "fork_root",
+   "link": "fork",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET_FLAT",
+   "size": 3.0,
+   "length": 6.0,
+   "extras": [],
+   "pos": [
+    -18.0,
+    209.0,
+    -10.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 2.5,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "根元バーに 2-φ3 皿リベット（下面は面一）"
+  },
+  {
+   "name": "scr_a0203",
+   "a": "grab_motor_brk",
+   "b": "grab_motor_arm",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -56.25,
+    269.0,
+    874.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "scr_a0005"
+   ],
+   "note": "2-M4（腕の端面にタップ）"
+  },
+  {
+   "name": "scr_a0204",
+   "a": "grab_motor_brk",
+   "b": "grab_motor_arm",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -48.75,
+    269.0,
+    874.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "grab_belt",
+    "scr_a0203"
+   ],
+   "note": "2-M4（腕の端面にタップ）"
+  },
+  {
+   "name": "scr_a0205",
+   "a": "hop_side_L",
+   "b": "hop_back",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -423.0,
+    312.0,
+    715.029
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0206",
+   "a": "hop_side_L",
+   "b": "hop_back",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -423.0,
+    312.0,
+    646.027
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0207",
+   "a": "hop_side_R",
+   "b": "hop_back",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -423.0,
+    -312.0,
+    715.029
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0208",
+   "a": "hop_side_R",
+   "b": "hop_back",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -423.0,
+    -312.0,
+    646.027
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0209",
+   "a": "hop_front",
+   "b": "hop_floor",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 19.0,
+   "extras": [],
+   "pos": [
+    -11.0,
+    -2.0,
+    649.079
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 14.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0210",
+   "a": "hop_front",
+   "b": "hop_floor",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 19.0,
+   "extras": [],
+   "pos": [
+    -11.0,
+    -156.0,
+    649.079
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 14.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0211",
+   "a": "hop_side_L",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -27.0,
+    312.0,
+    592.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0212",
+   "a": "hop_side_L",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -27.0,
+    312.0,
+    689.02
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0213",
+   "a": "hop_side_R",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -27.0,
+    -312.0,
+    592.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0214",
+   "a": "hop_side_R",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 17.0,
+   "extras": [],
+   "pos": [
+    -27.0,
+    -312.0,
+    689.02
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0215",
+   "a": "ramp_foot_Le",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -8.0,
+    294.5,
+    676.125
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-φ3.2"
+  },
+  {
+   "name": "scr_a0216",
+   "a": "ramp_foot_Re",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -8.0,
+    -294.5,
+    676.125
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-φ3.2"
+  },
+  {
+   "name": "scr_a0217",
+   "a": "thk_arm_L",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -8.0,
+    182.0,
+    658.111
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-φ3.2"
+  },
+  {
+   "name": "scr_a0218",
+   "a": "thk_arm_L",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -8.0,
+    212.0,
+    686.889
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-φ3.2"
+  },
+  {
+   "name": "scr_a0219",
+   "a": "thk_arm_R",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -8.0,
+    -214.0,
+    658.111
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-φ3.2"
+  },
+  {
+   "name": "scr_a0220",
+   "a": "thk_arm_R",
+   "b": "hop_front",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    -8.0,
+    -184.0,
+    686.889
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-φ3.2"
+  },
+  {
+   "name": "scr_a0221",
+   "a": "hop_hanger_L0",
+   "b": "hop_hanger_L0v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -303.4,
+    320.0,
+    678.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0222",
+   "a": "hop_hanger_L0",
+   "b": "hop_hanger_L0v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -293.4,
+    320.0,
+    678.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0223",
+   "a": "hop_hanger_L0v",
+   "b": "post_rear_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -275.4,
+    332.0,
+    668.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "hop_hanger_L0"
+   ],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0224",
+   "a": "hop_hanger_L0v",
+   "b": "post_rear_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -275.4,
+    332.0,
+    680.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "hop_hanger_L0"
+   ],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0225",
+   "a": "hop_hanger_L1",
+   "b": "hop_hanger_L1v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -303.4,
+    320.0,
+    608.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0226",
+   "a": "hop_hanger_L1",
+   "b": "hop_hanger_L1v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -293.4,
+    320.0,
+    608.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0227",
+   "a": "hop_hanger_L1v",
+   "b": "post_rear_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -275.4,
+    332.0,
+    598.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "hop_hanger_L1"
+   ],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0228",
+   "a": "hop_hanger_L1v",
+   "b": "post_rear_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -275.4,
+    332.0,
+    610.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "hop_hanger_L1"
+   ],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0229",
+   "a": "hop_hanger_R0",
+   "b": "hop_hanger_R0v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -265.4,
+    -320.0,
+    678.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [
+    "post_rear_R",
+    "scr_a0224"
+   ],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0230",
+   "a": "hop_hanger_R0",
+   "b": "hop_hanger_R0v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -255.4,
+    -320.0,
+    678.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0231",
+   "a": "hop_hanger_R0v",
+   "b": "post_rear_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -275.4,
+    -332.0,
+    692.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0232",
+   "a": "hop_hanger_R1",
+   "b": "hop_hanger_R1v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -265.4,
+    -320.0,
+    608.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [
+    "post_rear_R",
+    "scr_a0228"
+   ],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0233",
+   "a": "hop_hanger_R1",
+   "b": "hop_hanger_R1v",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 20.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -255.4,
+    -320.0,
+    608.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 8.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（水平板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0234",
+   "a": "hop_hanger_R1v",
+   "b": "post_rear_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -275.4,
+    -332.0,
+    622.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0235",
+   "a": "hop_side_L",
+   "b": "sing_brg_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -21.667,
+    314.0,
+    708.857
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 10.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4 + フランジブッシュ"
+  },
+  {
+   "name": "scr_a0236",
+   "a": "lidar_lvl_top_high",
+   "b": "lidar_high",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    404.846,
+    333.846,
+    553.4
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3 ピッチ40"
+  },
+  {
+   "name": "scr_a0237",
+   "a": "lidar_lvl_top_high",
+   "b": "lidar_high",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    447.154,
+    376.154,
+    553.4
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3 ピッチ40"
+  },
+  {
+   "name": "scr_a0238",
+   "a": "lidar_lvl_base_high",
+   "b": "lidar_high_brk",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    394.0,
+    323.889,
+    571.4
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4（立板の上端面にタップ）"
+  },
+  {
+   "name": "scr_a0239",
+   "a": "lidar_lvl_base_high",
+   "b": "lidar_high_brk",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    394.0,
+    386.111,
+    571.4
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4（立板の上端面にタップ）"
+  },
+  {
+   "name": "scr_a0240",
+   "a": "lidar_high_brk",
+   "b": "post_front_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    398.0,
+    350.0,
+    418.632
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0241",
+   "a": "lidar_high_brk",
+   "b": "post_front_L",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    398.0,
+    350.0,
+    559.368
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 8.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "lidar_lvl_base_high",
+    "lidar_lvl_top_high"
+   ],
+   "note": "2-M5"
+  },
+  {
+   "name": "scr_a0242",
+   "a": "lidar_lvl_top_front",
+   "b": "lidar_low_front",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    468.154,
+    21.154,
+    123.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3 ピッチ40"
+  },
+  {
+   "name": "scr_a0243",
+   "a": "lidar_lvl_top_front",
+   "b": "lidar_low_front",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    468.154,
+    -21.154,
+    123.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3 ピッチ40"
+  },
+  {
+   "name": "scr_a0244",
+   "a": "lidar_lvl_top_rear",
+   "b": "lidar_low_rear",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -468.154,
+    -21.154,
+    123.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3 ピッチ40"
+  },
+  {
+   "name": "scr_a0245",
+   "a": "lidar_lvl_top_rear",
+   "b": "lidar_low_rear",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -425.846,
+    21.154,
+    123.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3 ピッチ40"
+  },
+  {
+   "name": "scr_a0246",
+   "a": "mount_brk_fl",
+   "b": "mount_ear_fl",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    244.0,
+    256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0247",
+   "a": "mount_brk_fl",
+   "b": "mount_ear_fl",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    254.0,
+    256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0248",
+   "a": "mount_brk_fr",
+   "b": "mount_ear_fr",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    292.0,
+    -256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0249",
+   "a": "mount_brk_fr",
+   "b": "mount_ear_fr",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    302.0,
+    -256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0250",
+   "a": "mount_brk_rl",
+   "b": "mount_ear_rl",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -356.0,
+    256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0251",
+   "a": "mount_brk_rl",
+   "b": "mount_ear_rl",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -346.0,
+    256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0252",
+   "a": "mount_brk_rr",
+   "b": "mount_ear_rr",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -308.0,
+    -256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0253",
+   "a": "mount_brk_rr",
+   "b": "mount_ear_rr",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -298.0,
+    -256.0,
+    139.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5（耳板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0254",
+   "a": "nip_guide_d0",
+   "b": "nip_guide_d1",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -62.824,
+    -104.0,
+    -45.435
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0255",
+   "a": "nip_guide_d0",
+   "b": "nip_guide_d1",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -86.784,
+    -104.0,
+    -54.007
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0256",
+   "a": "pitch_side_R",
+   "b": "nip_guide_d0",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -90.777,
+    -303.5,
+    -47.578
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "scr_a0255"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0257",
+   "a": "pitch_side_R",
+   "b": "nip_guide_d0",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -72.807,
+    -303.5,
+    -56.15
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0258",
+   "a": "nip_guide_d1",
+   "b": "nip_guide_d2",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -66.817,
+    96.0,
+    -51.864
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "scr_a0254",
+    "scr_a0257"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0259",
+   "a": "nip_guide_d1",
+   "b": "nip_guide_d2",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -78.797,
+    96.0,
+    -47.578
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0260",
+   "a": "nip_guide_u1",
+   "b": "nip_guide_u0",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -62.824,
+    -96.0,
+    45.435
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0261",
+   "a": "nip_guide_u1",
+   "b": "nip_guide_u0",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -86.784,
+    -96.0,
+    54.007
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0262",
+   "a": "pitch_side_R",
+   "b": "nip_guide_u0",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -90.777,
+    -303.5,
+    47.578
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "scr_a0261"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0263",
+   "a": "pitch_side_R",
+   "b": "nip_guide_u0",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -72.807,
+    -303.5,
+    51.864
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0264",
+   "a": "nip_guide_u1",
+   "b": "nip_guide_u2",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -80.794,
+    96.0,
+    47.578
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0265",
+   "a": "pitch_side_L",
+   "b": "nip_snut_L",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    20.0,
+    303.5,
+    65.75
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 16.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0266",
+   "a": "pitch_side_L",
+   "b": "nip_snut_L",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    32.0,
+    303.5,
+    81.75
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 16.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0267",
+   "a": "pitch_side_R",
+   "b": "nip_snut_R",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    20.0,
+    -303.5,
+    77.75
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 16.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0268",
+   "a": "pitch_side_R",
+   "b": "nip_snut_R",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    26.0,
+    -303.5,
+    65.75
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 16.0,
+   "thru": [],
+   "touch": [
+    "scr_a0265"
+   ],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0269",
+   "a": "odo_blk0",
+   "b": "odo_arm0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    201.0,
+    34.0,
+    90.98
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 9.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail0"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0270",
+   "a": "odo_blk0",
+   "b": "odo_arm0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    211.0,
+    28.5,
+    61.88
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail0"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0271",
+   "a": "odo_blk0",
+   "b": "odo_arm0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    203.0,
+    28.5,
+    75.46
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail0"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0272",
+   "a": "odo_blk0",
+   "b": "odo_arm0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    211.0,
+    28.5,
+    85.16
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail0"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0273",
+   "a": "odo_blk1",
+   "b": "odo_arm1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -146.0,
+    336.0,
+    90.98
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 9.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail1"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0274",
+   "a": "odo_blk1",
+   "b": "odo_arm1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -151.5,
+    346.0,
+    61.88
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail1"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0275",
+   "a": "odo_blk1",
+   "b": "odo_arm1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -151.5,
+    338.0,
+    75.46
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail1"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0276",
+   "a": "odo_blk1",
+   "b": "odo_arm1",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -151.5,
+    346.0,
+    85.16
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail1"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0277",
+   "a": "odo_blk2",
+   "b": "odo_arm2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -146.0,
+    -348.0,
+    90.98
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 9.0,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail2"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0278",
+   "a": "odo_blk2",
+   "b": "odo_arm2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -151.5,
+    -338.0,
+    61.88
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail2"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0279",
+   "a": "odo_blk2",
+   "b": "odo_arm2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -151.5,
+    -346.0,
+    75.46
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail2"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0280",
+   "a": "odo_blk2",
+   "b": "odo_arm2",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "FLAT",
+   "size": 3.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -151.5,
+    -338.0,
+    85.16
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 3.5,
+   "depth": 4.0,
+   "thru": [],
+   "touch": [
+    "odo_rail2"
+   ],
+   "note": "4-M3（ブロック上面のタップ）"
+  },
+  {
+   "name": "scr_a0281",
+   "a": "odo_brk1",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -181.875,
+    350.0,
+    109.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0282",
+   "a": "odo_brk1",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -169.625,
+    350.0,
+    109.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0283",
+   "a": "odo_brk2",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -181.875,
+    -350.0,
+    109.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0284",
+   "a": "odo_brk2",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -153.292,
+    -350.0,
+    109.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "odo_rail2"
+   ],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0285",
+   "a": "odo_enc0",
+   "b": "odo_encmnt0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    182.5,
+    -7.0,
+    19.75
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "odo_boss0"
+   ],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0286",
+   "a": "odo_enc0",
+   "b": "odo_encmnt0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    182.5,
+    5.25,
+    18.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 1.5,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "odo_boss0"
+   ],
+   "note": "2-M3"
+  },
+  {
+   "name": "scr_a0287",
+   "a": "ramp_seat_L",
+   "b": "pedestal_beam0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    85.0,
+    280.625,
+    815.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0288",
+   "a": "ramp_seat_L",
+   "b": "pedestal_beam0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    85.0,
+    291.875,
+    815.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "ramp_seat_Lv",
+    "scr_a0287"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0289",
+   "a": "ramp_seat_R",
+   "b": "pedestal_beam0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    85.0,
+    -299.375,
+    815.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "ramp_seat_Rv"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0290",
+   "a": "ramp_seat_R",
+   "b": "pedestal_beam0",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     4
+    ]
+   ],
+   "pos": [
+    85.0,
+    -288.125,
+    815.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "ramp_seat_Rv",
+    "scr_a0289"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0291",
+   "a": "yaw_side_L",
+   "b": "pitch_pivot_L",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -11.25,
+    315.5,
+    158.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_L"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0292",
+   "a": "yaw_side_L",
+   "b": "pitch_pivot_L",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -7.5,
+    315.5,
+    167.375
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_L"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0293",
+   "a": "yaw_side_L",
+   "b": "pitch_pivot_L",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    7.5,
+    315.5,
+    150.5
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_L"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0294",
+   "a": "yaw_side_L",
+   "b": "pitch_pivot_L",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    11.25,
+    315.5,
+    158.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_L"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0295",
+   "a": "yaw_side_R",
+   "b": "pitch_pivot_R",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -7.5,
+    -315.5,
+    148.625
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_R"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0296",
+   "a": "yaw_side_R",
+   "b": "pitch_pivot_R",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    0.0,
+    -315.5,
+    169.25
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_R"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0297",
+   "a": "yaw_side_R",
+   "b": "pitch_pivot_R",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    7.5,
+    -315.5,
+    167.375
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 9.0,
+   "thru": [],
+   "touch": [
+    "pitch_side_R"
+   ],
+   "note": "4-M4 軸受ボス"
+  },
+  {
+   "name": "scr_a0298",
+   "a": "pitch_side_R",
+   "b": "pitch_wbrk_m",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -58.0,
+    -303.5,
+    -58.364
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M4。側板の内面へ"
+  },
+  {
+   "name": "scr_a0299",
+   "a": "pitch_side_R",
+   "b": "pitch_wbrk_m",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -56.0,
+    -303.5,
+    -41.182
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M4。側板の内面へ"
+  },
+  {
+   "name": "scr_a0300",
+   "a": "pitch_side_R",
+   "b": "pitch_wbrk_m",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "HEXNUT",
+     4
+    ],
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -50.0,
+    -303.5,
+    -35.455
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 5.0,
+   "thru": [
+    "pitch_wbrg_m",
+    "pitch_wcol_m"
+   ],
+   "touch": [],
+   "note": "4-M4。側板の内面へ"
+  },
+  {
+   "name": "scr_a0301",
+   "a": "pitch_side_R",
+   "b": "pitch_wbrk_p",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -28.0,
+    -303.5,
+    40.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M4。側板の内面へ"
+  },
+  {
+   "name": "scr_a0302",
+   "a": "pitch_side_R",
+   "b": "pitch_wbrk_p",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -28.0,
+    -303.5,
+    30.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [
+    "pitch_wbrg_p"
+   ],
+   "touch": [],
+   "note": "4-M4。側板の内面へ"
+  },
+  {
+   "name": "scr_a0303",
+   "a": "pitch_side_R",
+   "b": "pitch_wbrk_p",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -34.0,
+    -303.5,
+    36.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 6.0,
+   "thru": [
+    "pitch_wbrg_p"
+   ],
+   "touch": [
+    "scr_a0301"
+   ],
+   "note": "4-M4。側板の内面へ"
+  },
+  {
+   "name": "scr_a0304",
+   "a": "pitch_side_R",
+   "b": "pitch_worm_wheel",
+   "link": "pitch",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    0.0,
+    -303.5,
+    -15.734
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 14.0,
+   "thru": [],
+   "touch": [
+    "pitch_pivot_R"
+   ],
+   "note": "6-M4 PCD28。ボスで側板へ共締め（＝仰角軸と一体）"
+  },
+  {
+   "name": "scr_a0305",
+   "a": "power_led",
+   "b": "post_front_R",
+   "link": "base",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    402.0,
+    -350.0,
+    426.0
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M5 溝ナット"
+  },
+  {
+   "name": "scr_a0306",
+   "a": "press_shelf",
+   "b": "press_clamp_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -231.4,
+    54.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 24.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4。φ10 シャフトクランプ（購入）"
+  },
+  {
+   "name": "scr_a0307",
+   "a": "press_shelf",
+   "b": "press_clamp_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -199.4,
+    66.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 24.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4。φ10 シャフトクランプ（購入）"
+  },
+  {
+   "name": "scr_a0308",
+   "a": "press_shelf",
+   "b": "press_clamp_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -231.4,
+    -66.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 24.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4。φ10 シャフトクランプ（購入）"
+  },
+  {
+   "name": "scr_a0309",
+   "a": "press_shelf",
+   "b": "press_clamp_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -199.4,
+    -54.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 24.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4。φ10 シャフトクランプ（購入）"
+  },
+  {
+   "name": "scr_a0310",
+   "a": "press_post_Lf0",
+   "b": "press_post_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -223.092,
+    223.0,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 18.0,
+   "thru": [],
+   "touch": [
+    "car_brk_L"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0311",
+   "a": "press_post_Lf0",
+   "b": "press_post_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -215.4,
+    223.0,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 15.5,
+   "thru": [],
+   "touch": [
+    "car_brk_L"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0312",
+   "a": "press_post_Lf1",
+   "b": "press_post_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -207.708,
+    223.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 18.0,
+   "thru": [],
+   "touch": [
+    "press_shelf"
+   ],
+   "note": "2-M4（立板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0313",
+   "a": "press_post_Lf1",
+   "b": "press_post_L",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -200.015,
+    223.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "press_shelf"
+   ],
+   "note": "2-M4（立板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0314",
+   "a": "press_post_Rf0",
+   "b": "press_post_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -223.092,
+    -223.0,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 18.0,
+   "thru": [],
+   "touch": [
+    "car_brk_R"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0315",
+   "a": "press_post_Rf0",
+   "b": "press_post_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -215.4,
+    -223.0,
+    813.5
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 3.0,
+   "depth": 15.5,
+   "thru": [],
+   "touch": [
+    "car_brk_R"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0316",
+   "a": "press_post_Rf1",
+   "b": "press_post_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -207.708,
+    -223.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 18.0,
+   "thru": [],
+   "touch": [
+    "press_shelf"
+   ],
+   "note": "2-M4（立板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0317",
+   "a": "press_post_Rf1",
+   "b": "press_post_R",
+   "link": "carriage",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -200.015,
+    -223.0,
+    944.5
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "press_shelf"
+   ],
+   "note": "2-M4（立板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0318",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -416.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0319",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    414.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0320",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -2.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0321",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    206.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0322",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -106.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0323",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    310.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0324",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -314.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0325",
+   "a": "skirt_L",
+   "b": "rail_L_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -262.0,
+    361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0326",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -54.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0327",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    50.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0328",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    154.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0329",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    258.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0330",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    362.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0331",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -366.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0332",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -340.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0333",
+   "a": "skirt_R",
+   "b": "rail_R_out",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 4.0,
+   "extras": [],
+   "pos": [
+    -288.0,
+    -361.0,
+    119.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 2.0,
+   "thru": [],
+   "touch": [],
+   "note": "8-φ3.2 を長手材に沿って"
+  },
+  {
+   "name": "scr_a0334",
+   "a": "rail_plate_L",
+   "b": "topbeam0_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -343.944,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0335",
+   "a": "rail_plate_L",
+   "b": "topbeam0_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -331.831,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "cab_grabber"
+   ],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0336",
+   "a": "rail_plate_L",
+   "b": "topbeam0_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -319.719,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [
+    "cab_grabber"
+   ],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0337",
+   "a": "rail_plate_L",
+   "b": "topbeam0_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -307.606,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0338",
+   "a": "rail_plate_L",
+   "b": "topbeam1_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -97.4,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "beltbrk_drv_L"
+   ],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0339",
+   "a": "rail_plate_L",
+   "b": "topbeam1_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -179.4,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0340",
+   "a": "rail_plate_L",
+   "b": "topbeam1_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -17.4,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0341",
+   "a": "rail_plate_L",
+   "b": "topbeam1_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -219.4,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0342",
+   "a": "rail_plate_L",
+   "b": "topbeam1_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -139.4,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0343",
+   "a": "rail_plate_L",
+   "b": "topbeam1_L",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    22.6,
+    336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0344",
+   "a": "rail_plate_R",
+   "b": "topbeam1_R",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -199.4,
+    -336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0345",
+   "a": "rail_plate_R",
+   "b": "topbeam1_R",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -119.4,
+    -336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0346",
+   "a": "rail_plate_R",
+   "b": "topbeam1_R",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    2.6,
+    -336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0347",
+   "a": "rail_plate_R",
+   "b": "topbeam1_R",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    42.6,
+    -336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0348",
+   "a": "rail_plate_R",
+   "b": "topbeam1_R",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -155.4,
+    -336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0349",
+   "a": "rail_plate_R",
+   "b": "topbeam1_R",
+   "link": "rails",
+   "how": "TSLOT",
+   "how_ab": [
+    "THRU",
+    "TNUT"
+   ],
+   "kind": "FLAT",
+   "size": 5.0,
+   "length": 10.0,
+   "extras": [
+    [
+     "TNUT",
+     5
+    ]
+   ],
+   "pos": [
+    -83.4,
+    -336.0,
+    828.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 4.0,
+   "depth": 0.0,
+   "thru": [],
+   "touch": [
+    "beltbrk_drv_R"
+   ],
+   "note": "上桁の内側面へ 6-M5"
+  },
+  {
+   "name": "scr_a0350",
+   "a": "ramp_foot_Le",
+   "b": "ramp_foot_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -11.0,
+    293.5,
+    684.714
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "hop_front"
+   ],
+   "note": "2-M4（足の端面にタップ。耳は貫通）"
+  },
+  {
+   "name": "scr_a0351",
+   "a": "ramp_foot_Le",
+   "b": "ramp_foot_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -11.0,
+    293.5,
+    692.143
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "hop_front",
+    "scr_a0350"
+   ],
+   "note": "2-M4（足の端面にタップ。耳は貫通）"
+  },
+  {
+   "name": "scr_a0352",
+   "a": "ramp_side_L",
+   "b": "ramp_foot_L",
+   "link": "base",
+   "how": "RIVET",
+   "how_ab": [
+    "RIVET",
+    "RIVET"
+   ],
+   "kind": "RIVET",
+   "size": 3.2,
+   "length": 8.0,
+   "extras": [],
+   "pos": [
+    28.38,
+    289.5,
+    705.198
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 1.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [],
+   "note": ""
+  },
+  {
+   "name": "scr_a0353",
+   "a": "ramp_foot_Re",
+   "b": "ramp_foot_R",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -11.0,
+    -293.5,
+    684.714
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "hop_front"
+   ],
+   "note": "2-M4（足の端面にタップ。耳は貫通）"
+  },
+  {
+   "name": "scr_a0354",
+   "a": "ramp_foot_Re",
+   "b": "ramp_foot_R",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    -11.0,
+    -293.5,
+    692.143
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 30.0,
+   "thru": [],
+   "touch": [
+    "hop_front",
+    "scr_a0353"
+   ],
+   "note": "2-M4（足の端面にタップ。耳は貫通）"
+  },
+  {
+   "name": "scr_a0355",
+   "a": "ramp_seat_L",
+   "b": "ramp_seat_Lv",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    52.0,
+    296.5,
+    818.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4（垂直板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0356",
+   "a": "ramp_seat_L",
+   "b": "ramp_seat_Lv",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    60.0,
+    296.5,
+    818.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4（垂直板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0357",
+   "a": "ramp_strut_L",
+   "b": "ramp_seat_Lv",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    96.74,
+    290.5,
+    809.28
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "ramp_side_L"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0358",
+   "a": "ramp_strut_L",
+   "b": "ramp_seat_Lv",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    104.42,
+    290.5,
+    807.373
+   ],
+   "dir": [
+    0,
+    -1,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 6.0,
+   "thru": [],
+   "touch": [
+    "ramp_side_L"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0359",
+   "a": "ramp_seat_R",
+   "b": "ramp_seat_Rv",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    52.0,
+    -296.5,
+    818.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4（垂直板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0360",
+   "a": "ramp_seat_R",
+   "b": "ramp_seat_Rv",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    60.0,
+    -296.5,
+    818.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 3.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4（垂直板の端面にタップ）"
+  },
+  {
+   "name": "scr_a0361",
+   "a": "sing_motor",
+   "b": "sing_mot_brk",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -22.0,
+    362.0,
+    716.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 PCD26"
+  },
+  {
+   "name": "scr_a0362",
+   "a": "sing_motor",
+   "b": "sing_mot_brk",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -22.0,
+    362.0,
+    722.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [
+    "scr_a0361"
+   ],
+   "note": "4-M3 PCD26"
+  },
+  {
+   "name": "scr_a0363",
+   "a": "sing_motor",
+   "b": "sing_mot_brk",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -14.0,
+    362.0,
+    708.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 3.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M3 PCD26"
+  },
+  {
+   "name": "scr_a0364",
+   "a": "sing_motor",
+   "b": "sing_mot_brk",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "THRU"
+   ],
+   "kind": "CAP",
+   "size": 3.0,
+   "length": 18.0,
+   "extras": [
+    [
+     "HEXNUT",
+     3
+    ],
+    [
+     "WASHER",
+     3
+    ]
+   ],
+   "pos": [
+    -14.0,
+    362.0,
+    730.0
+   ],
+   "dir": [
+    0,
+    1,
+    0
+   ],
+   "grip": 12.0,
+   "depth": 3.0,
+   "thru": [
+    "sing_cplg"
+   ],
+   "touch": [],
+   "note": "4-M3 PCD26"
+  },
+  {
+   "name": "scr_a0365",
+   "a": "thk_arm_L",
+   "b": "thk_hall_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -11.0,
+    188.0,
+    696.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 15.0,
+   "thru": [],
+   "touch": [
+    "cab_turret"
+   ],
+   "note": "2-M2"
+  },
+  {
+   "name": "scr_a0366",
+   "a": "thk_arm_L",
+   "b": "thk_hall_L",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -11.0,
+    206.0,
+    710.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 15.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M2"
+  },
+  {
+   "name": "scr_a0367",
+   "a": "thk_arm_R",
+   "b": "thk_hall_R",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -11.0,
+    -208.0,
+    696.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 15.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M2"
+  },
+  {
+   "name": "scr_a0368",
+   "a": "thk_arm_R",
+   "b": "thk_hall_R",
+   "link": "base",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 2.0,
+   "length": 8.0,
+   "extras": [
+    [
+     "WASHER",
+     2
+    ]
+   ],
+   "pos": [
+    -11.0,
+    -190.0,
+    710.0
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "grip": 3.0,
+   "depth": 15.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M2"
+  },
+  {
+   "name": "scr_a0369",
+   "a": "yaw_arm_f",
+   "b": "yaw_motor_post_m",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    134.0,
+    192.0,
+    20.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0370",
+   "a": "yaw_arm_f",
+   "b": "yaw_motor_post_m",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    134.0,
+    200.0,
+    20.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0371",
+   "a": "yaw_arm_f",
+   "b": "yaw_motor_post_p",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    184.0,
+    180.0,
+    20.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0372",
+   "a": "yaw_arm_f",
+   "b": "yaw_motor_post_p",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 14.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    178.0,
+    196.0,
+    20.0
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "grip": 6.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0373",
+   "a": "yaw_arm_f",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    135.625,
+    -84.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [
+    "yaw_pulley_big"
+   ],
+   "touch": [
+    "scr_yawpul2",
+    "scr_yawpul2"
+   ],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0374",
+   "a": "yaw_arm_f",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    135.625,
+    84.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [
+    "yaw_pulley_big"
+   ],
+   "touch": [
+    "scr_yawpul5",
+    "scr_yawpul5"
+   ],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0375",
+   "a": "yaw_arm_f",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    139.375,
+    -28.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0376",
+   "a": "yaw_arm_f",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    139.375,
+    28.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0377",
+   "a": "yaw_arm_r",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -150.625,
+    46.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0378",
+   "a": "yaw_arm_r",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -146.875,
+    56.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0379",
+   "a": "yaw_arm_r",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -141.25,
+    -22.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0380",
+   "a": "yaw_arm_r",
+   "b": "yaw_ring",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 5.0,
+   "length": 16.0,
+   "extras": [
+    [
+     "WASHER",
+     5
+    ]
+   ],
+   "pos": [
+    -141.25,
+    -12.0,
+    26.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 6.0,
+   "depth": 20.0,
+   "thru": [],
+   "touch": [],
+   "note": "4-M5。リング上面へ"
+  },
+  {
+   "name": "scr_a0381",
+   "a": "yaw_motor_deck",
+   "b": "yaw_motor_post_m",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    134.0,
+    174.0,
+    49.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 4.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0382",
+   "a": "yaw_motor_deck",
+   "b": "yaw_motor_post_m",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    142.0,
+    188.0,
+    49.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 4.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [
+    "yaw_motor"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0383",
+   "a": "yaw_motor_deck",
+   "b": "yaw_motor_post_p",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "FLAT",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    178.0,
+    184.0,
+    49.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 4.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [
+    "yaw_motor",
+    "scr_a0371"
+   ],
+   "note": "2-M4"
+  },
+  {
+   "name": "scr_a0384",
+   "a": "yaw_motor_deck",
+   "b": "yaw_motor_post_p",
+   "link": "turret",
+   "how": "BOLT",
+   "how_ab": [
+    "THRU",
+    "SCREW_IN"
+   ],
+   "kind": "CAP",
+   "size": 4.0,
+   "length": 12.0,
+   "extras": [
+    [
+     "WASHER",
+     4
+    ]
+   ],
+   "pos": [
+    180.0,
+    206.0,
+    49.0
+   ],
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "grip": 4.0,
+   "depth": 19.0,
+   "thru": [],
+   "touch": [],
+   "note": "2-M4"
+  }
+ ]
+}

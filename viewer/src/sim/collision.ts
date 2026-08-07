@@ -6,7 +6,24 @@ export type Obstacle =
   | { kind: 'circle'; x: number; z: number; r: number; tag: string }
   | { kind: 'rect'; x: number; z: number; hw: number; hd: number; tag: string };
 
+/**
+ * 機体を円で近似した半径 [m]。⚠ **保守側の簡略化**（実体は 842×722）。
+ * 外接円は √(0.421²+0.361²)=0.555 なので、0.5 でも既に少し攻めている。
+ */
 export const ROBOT_R = 0.5;
+
+/**
+ * 「向きを合わせて正対で寄せる」ときの実効半径 [m]。
+ *
+ * ⚠ 円で近似していると、**機体をどう向けても同じだけ離れる**ことになる。
+ *   補充机には後ろ向きで正対して寄せる（ToF 2 個で平行を出す。strategy.md
+ *   §位置決め）ので、効くのは車体の後端 421mm であって外接円 500mm ではない。
+ *   円のままだと机から 79mm 余計に離れ、そのぶん櫛歯が山に届かない。
+ */
+export const ROBOT_HALF_LEN = 0.421;
+
+/** 正対とみなす角度差 [rad]。ToF での平行合わせ ±2°（strategy.md）に余裕を見た値 */
+export const SQUARE_TOL = 0.12;
 
 function sideProps(sign: 1 | -1): Obstacle[] {
   // sign=-1: 赤陣 (RED_SIDE そのまま) / sign=1: 青陣 (鏡映 = z反転)
